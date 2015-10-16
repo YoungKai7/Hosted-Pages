@@ -1,7 +1,7 @@
 Hosted Wallet Page
 ==================
 
-The PayFabric hosted wallet page is used for embedding the wallet page into your application to allow your users to create or update their credit card / eCheck details.
+The PayFabric hosted wallet page is used for embedding the wallet page into your application to allow your users to create or update their credit card / eCheck details (including billing address information).
 
 Before embedding the wallet page, please ensure the following:
 
