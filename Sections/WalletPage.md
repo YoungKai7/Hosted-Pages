@@ -11,7 +11,7 @@ Before embedding the wallet page, please ensure the following:
 Create a Credit Card / eCheck
 -----------------------------
 
-Build the hosted create wallet page URL in this way:
+Build the hosted create wallet page URL this way:
 
 https://sandbox.payfabric.com/V2/Web/Wallet/Create?customer=AARONFIT0001&tender=CreditCard&token=@token
 tender = *CreditCard* | *ECheck*
@@ -22,7 +22,7 @@ tender = *CreditCard* | *ECheck*
 Update a Credit Card / eCheck
 -----------------------------
 
-Build the hosted update wallet page URL in this way:
+Build the hosted update wallet page URL this way:
 
 https://sandbox.payfabric.com/V2/Web/Wallet/edit?card=@cardID&token=@token
 
