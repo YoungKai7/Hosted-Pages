@@ -1,6 +1,6 @@
 PayFabric Hosted Pages
 ======================
-PayFabric hosted pages are secure pages that can be embedded into your application, to allow for processing of the transactions or creating new Credit Cards or eChecks into a customers Wallet. Below are the base URLs:
+PayFabric hosted pages are secure pages that can be embedded into your application, to allow for processing of the transactions or creating new credit card or eCheck entries into a customer’s wallet. Below are the base URLs:
 
 1. Live Server:    ``https://www.payfabric.com/V2/Web``
 1. Sandbox Server: ``https://sandbox.payfabric.com/V2/Web``
@@ -25,7 +25,7 @@ We have a [detailed guide](https://github.com/ShaunSharples/HostedPages/blob/mas
 Wallet Page
 -----------
 
-The wallet page is used for embedding a page to create or modify credit cards or eChecks.
+The wallet page is used for embedding a page to create or modify credit card or eCheck entries.
 
 We have a [detailed guide](https://github.com/ShaunSharples/HostedPages/blob/master/Sections/WalletPage.md) for getting started with embedding the wallet page into your application.
 
