@@ -5,6 +5,7 @@ PayFabric hosted pages are secure pages that can be embedded into your applicati
 1. Live Server:    ``https://www.payfabric.com/V2/Web``
 1. Sandbox Server: ``https://sandbox.payfabric.com/V2/Web``
 
+
 Where do I start?
 -----------------
 
@@ -15,12 +16,14 @@ Want to get started with PayFabric Hosted Page integration? Here's a quick check
 3. Choose the hosted page you need to work with.
 4. Have a question or need help? Contact <support@payfabric.com>.
 
+
 Payment Page
 ------------
 
 The payment page is used for embedding a page to process an existing transaction.
 
 We have a [detailed guide](https://github.com/ShaunSharples/HostedPages/blob/master/Sections/PaymentPage.md) for getting started with embedding the payment page into your application.
+
 
 Wallet Page
 -----------
@@ -29,7 +32,13 @@ The wallet page is used for embedding a page to create or modify credit card or 
 
 We have a [detailed guide](https://github.com/ShaunSharples/HostedPages/blob/master/Sections/WalletPage.md) for getting started with embedding the wallet page into your application.
 
+
 Customize Page
 --------------
 
 Both the payment and wallet pages are able to be customized with a custom theme consisting of custom CSS and JavaScript, which will be inserted into and applied to the hosted pages.  We have a [detailed guide](https://github.com/PayFabric/Portal/wiki/Themes) for creating and using these customized themes.
+
+
+Help us make it better
+----------------------
+Please tell us how we can make the Hosted Pages better. If you have a specific feature request or if you found a bug, please contact <support@payfabric.com>. Also, feel free to branch these documents and send a pull request with improvements!
