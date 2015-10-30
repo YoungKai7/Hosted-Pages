@@ -12,7 +12,7 @@ Where do I start?
 Want to get started with PayFabric Hosted Page integration? Here's a quick check list:
 
 1. Register and then configure a PayFabric account, check out the [Quick Start Guide](https://github.com/PayFabric/Portal/wiki) to learn how.
-2. Read up on how to generate a [Security Token](https://github.com/ShaunSharples/APIs/blob/ShaunSharples-patch-1/Sections/Authentication.md#security-token) as our hosted pages require this. 
+2. Read up on how to generate a [Security Token](https://github.com/PayFabric/APIs/blob/v2/Sections/Authentication.md#security-token) as our hosted pages require this. 
 3. Choose the hosted page you need to work with.
 4. Have a question or need help? Contact <support@payfabric.com>.
 
@@ -22,7 +22,7 @@ Payment Page
 
 The payment page is used for embedding a page to process an existing transaction.
 
-We have a [detailed guide](https://github.com/ShaunSharples/HostedPages/blob/master/Sections/PaymentPage.md) for getting started with embedding the payment page into your application.
+We have a [detailed guide](https://github.com/PayFabric/HostedPages/blob/master/Sections/PaymentPage.md) for getting started with embedding the payment page into your application.
 
 
 Wallet Page
@@ -30,7 +30,7 @@ Wallet Page
 
 The wallet page is used for embedding a page to create or modify credit card or eCheck entries.
 
-We have a [detailed guide](https://github.com/ShaunSharples/HostedPages/blob/master/Sections/WalletPage.md) for getting started with embedding the wallet page into your application.
+We have a [detailed guide](https://github.com/PayFabric/HostedPages/blob/master/Sections/WalletPage.md) for getting started with embedding the wallet page into your application.
 
 
 Customize Page
