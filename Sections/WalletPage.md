@@ -13,7 +13,7 @@ Create a Credit Card / eCheck
 
 Build the hosted create wallet page URL this way:
 
-https://sandbox.payfabric.com/V3/PayFabric/Web/Wallet/Create?customer={CUSTOMER NUMBER}&tender={TENDER}&token={@TOKEN}
+https://sandbox.payfabric.com/V3/PayFabric/Web/Wallet/Create?customer={CUSTOMER_NUMBER}&tender={TENDER}&token={@TOKEN}
 {TENDER} = *CreditCard* | *ECheck*
 
 ![Hosted create wallet page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/v2/HostedCreateWalletPage.png "Hosted create wallet page")
