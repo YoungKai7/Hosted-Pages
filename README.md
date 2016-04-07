@@ -22,7 +22,7 @@ Payment Page
 
 The payment page is used for embedding a page to process an existing transaction.
 
-We have a [detailed guide](https://github.com/PayFabric/HostedPages/blob/master/Sections/PaymentPage.md) for getting started with embedding the payment page into your application.
+We have a [detailed guide](Sections/PaymentPage.md) for getting started with embedding the payment page into your application.
 
 
 Wallet Page
@@ -30,7 +30,7 @@ Wallet Page
 
 The wallet page is used for embedding a page to create or modify credit card or eCheck entries.
 
-We have a [detailed guide](https://github.com/PayFabric/HostedPages/blob/master/Sections/WalletPage.md) for getting started with embedding the wallet page into your application.
+We have a [detailed guide](Sections/WalletPage.md) for getting started with embedding the wallet page into your application.
 
 
 Customize Page
