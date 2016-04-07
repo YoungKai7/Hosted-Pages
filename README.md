@@ -2,8 +2,8 @@ PayFabric Hosted Pages
 ======================
 PayFabric hosted pages are secure pages that can be embedded into your application, to allow for processing of the transactions or creating new credit card or eCheck entries into a customer’s wallet. Below are the base URLs:
 
-1. Live Server:    ``https://www.payfabric.com/V2/Web``
-1. Sandbox Server: ``https://sandbox.payfabric.com/V2/Web``
+1. Live Server:    ``https://www.payfabric.com/V3/PayFabric/Web``
+2. Sandbox Server: ``https://sandbox.payfabric.com/V3/PayFabric/Web``
 
 
 Where do I start?
@@ -11,8 +11,8 @@ Where do I start?
 
 Want to get started with PayFabric Hosted Page integration? Here's a quick check list:
 
-1. Register and then configure a PayFabric account, check out the [Quick Start Guide](https://github.com/PayFabric/Portal/wiki) to learn how.
-2. Read up on how to generate a [Security Token](https://github.com/PayFabric/APIs/blob/v2/Sections/Authentication.md#security-token) as our hosted pages require this. 
+1. Register and then configure a PayFabric account, check out the [Quick Start Guide](../../../Portal/wiki) to learn how.
+2. Read up on how to generate a [Security Token](../../../PayFabric-APIs/blob/master/Sections/Authentication.md#security-token) as our hosted pages require this. 
 3. Choose the hosted page you need to work with.
 4. Have a question or need help? Contact <support@payfabric.com>.
 
@@ -36,7 +36,7 @@ We have a [detailed guide](Sections/WalletPage.md) for getting started with embe
 Customize Page
 --------------
 
-Both the payment and wallet pages are able to be customized with a custom theme consisting of custom CSS and JavaScript, which will be inserted into and applied to the hosted pages.  We have a [detailed guide](https://github.com/PayFabric/Portal/wiki/Themes) for creating and using these customized themes.
+Both the payment and wallet pages are able to be customized with a custom theme consisting of custom CSS and JavaScript, which will be inserted into and applied to the hosted pages.  We have a [detailed guide](../../../Portal/wiki/Themes) for creating and using these customized themes.
 
 
 Help us make it better
