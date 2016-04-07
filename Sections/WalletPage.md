@@ -13,8 +13,10 @@ Create a Credit Card / eCheck
 
 Build the hosted create wallet page URL this way:
 
-https://sandbox.payfabric.com/V3/PayFabric/Web/Wallet/Create?customer={CUSTOMER_NUMBER}&tender={TENDER}&token={@TOKEN}
-{TENDER} = *CreditCard* | *ECheck*
+https://sandbox.payfabric.com/V3/PayFabric/Web/Wallet/Create?customer={CUSTOMER_NUMBER}&tender={TENDER}&token={@TOKEN}  
+
+{CUSTOMER_NUMBER} = Your customers unique identifier  
+{TENDER} = *CreditCard* or *ECheck*
 
 ![Hosted create wallet page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/v2/HostedCreateWalletPage.png "Hosted create wallet page")
 
@@ -37,5 +39,5 @@ PayFabric hosted wallet page accepts the below query string parameters to add op
 | QueryString| Description | 
 | :------------- | ------------- | 
 |Country=&Street1=&Street2=&Street3=<br/>&City=&State=&Zip=&Email=&Phone= |This query string can pass initial billing address information|
-|themename=|This parameter is to support 3rd party dynamically pass into theme name via query string. If the value is an existing theme name, then page will use this theme; If the value is an nonexistent theme name, then page will use the device default theme.|
-|returnuri=|This parameter is to support 3rd party dynamically pass a return url via query string. If the value is a valid URL, then after the wallet is saved, page will redirect to the return url, and the unique Wallet ID will be appended to the return URL. |
+|ThemeName=|This parameter is to support 3rd party dynamically pass into theme name via query string. If the value is an existing theme name, then page will use this theme; If the value is an nonexistent theme name, then page will use the device default theme.|
+|ReturnURI=|This parameter is to support 3rd party dynamically pass a return url via query string. If the value is a valid URL, then after the wallet is saved, page will redirect to the return url, and the unique Wallet ID will be appended to the return URL. |
