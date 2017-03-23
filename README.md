@@ -2,8 +2,8 @@ PayFabric Hosted Pages
 ======================
 PayFabric hosted pages are secure pages that can be embedded into your application, to allow for processing of the transactions or creating new credit card or eCheck entries into a customer’s wallet. Below are the base URL:
 
-``https://www.payfabric.com/Payment/Web``
-
+1. Live Server:      ``https://www.payfabric.com/Payment/Web``
+2. Sandbox Server:   ``https://sandbox.payfabric.com/Payment/Web``
 
 
 Where do I start?
