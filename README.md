@@ -42,3 +42,9 @@ Both the payment and wallet pages are able to be customized with a custom theme 
 Help us make it better
 ----------------------
 Please tell us how we can make the Hosted Pages better. If you have a specific feature request or if you found a bug, please contact <support@payfabric.com>. Also, feel free to branch these documents and send a pull request with improvements!
+
+Versions
+------------
+For our other supported versions of the Hosted Page please see the below:
+
+* [Version 2.0](https://github.com/PayFabric/Hosted-Pages/tree/v2)
