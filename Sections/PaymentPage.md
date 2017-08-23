@@ -10,7 +10,7 @@ Before embedding the payment page, please ensure the following:
  
 Build the payment hosted page URL this way:
 
-https://sandbox.payfabric.com/V3/PayFabric/Web/Transaction/Process?key={@TRXKEY}&token={@TOKEN}
+https://sandbox.payfabric.com/Payment/Web/Transaction/Process?key={@TRXKEY}&token={@TOKEN}
 
 ![Hosted payment page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/v2/HostedPaymentPage.png "Hosted payment page") 
 
