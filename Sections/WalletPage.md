@@ -13,7 +13,7 @@ Create a Credit Card / eCheck
 
 Build the hosted create wallet page URL this way:
 
-https://sandbox.payfabric.com/V3/PayFabric/Web/Wallet/Create?customer={CUSTOMER_NUMBER}&tender={TENDER}&token={@TOKEN}  
+https://sandbox.payfabric.com/Payment/Web/Wallet/Create?customer={CUSTOMER_NUMBER}&tender={TENDER}&token={@TOKEN}  
 
 {CUSTOMER_NUMBER} = Your customers unique identifier  
 {TENDER} = *CreditCard* or *ECheck*
@@ -26,7 +26,7 @@ Update a Credit Card / eCheck
 
 Build the hosted update wallet page URL this way:
 
-https://sandbox.payfabric.com/V3/PayFabric/Web/Wallet/edit?card={@CARDID}&token={@TOKEN}
+https://sandbox.payfabric.com/Payment/Web/Wallet/edit?card={@CARDID}&token={@TOKEN}
 
 ![Hosted update wallet page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/v2/HostedEditWalletPage.png "Hosted update wallet page") 
 
