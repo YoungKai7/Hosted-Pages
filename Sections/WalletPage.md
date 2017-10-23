@@ -37,7 +37,7 @@ PayFabric hosted wallet page accepts the below query string parameters to add op
 
 >
 | QueryString| Description | 
-| :------------- | ------------- | 
+| :------------- | :------------- | 
 |Country=&Street1=&Street2=&Street3=<br/>&City=&State=&Zip=&Email=&Phone= |This query string can pass initial billing address information|
 |ThemeName=|This parameter is to support 3rd party dynamically pass into theme name via query string. If the value is an existing theme name, then page will use this theme; If the value is an nonexistent theme name, then page will use the device default theme.|
 |ReturnURI=|This parameter is to support 3rd party dynamically pass a return url via query string. If the value is a valid URL, then after the wallet is saved, page will redirect to the return url, and the unique Wallet ID will be appended to the return URL. |
