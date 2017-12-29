@@ -4,8 +4,8 @@ Ability to embed PayFabric’s gateway profile page in an iFrame to allow intern
 
 Before embedding the wallet page, please ensure the following:
 
-1. Generate a [Security Token](../../../../PayFabric-APIs/blob/master/Sections/Authentication.md#security-token).  Assume the token value is @TOKEN.
-2. If updating, retrieve the unique gateway Id, see our [API documentation](blob/master/Sections/Payment%20Gateway%20Profiles.md#retrieve-payment-gateway-profiles) for how.  Assume the card Id is @GATEWAYID.
+1. Generate a [Security Token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Authentication.md#security-token).  Assume the token value is @TOKEN.
+2. If updating, retrieve the unique gateway Id, see our [API documentation](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Payment%20Gateway%20Profiles.md#retrieve-a-payment-gateway-profile) for how.  Assume the card Id is @GATEWAYID.
 
 Create a Gateway
 -----------------------------
