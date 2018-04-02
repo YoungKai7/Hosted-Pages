@@ -7,7 +7,7 @@ Before embedding the wallet page, please ensure the following:
 1. Generate a [Security Token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Authentication.md#security-token).  Assume the token value is @TOKEN.
 2. If updating, retrieve the unique gateway Id, see our [API documentation](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Payment%20Gateway%20Profiles.md#retrieve-a-payment-gateway-profile) for how.  Assume the card Id is @GATEWAYID.
 
-Create a Gateway
+Create a Gateway Profile
 -----------------------------
 
 Build the hosted create gateway profile page URL this way:
@@ -16,7 +16,7 @@ https://sandbox.payfabric.com/Payment/Web/Transaciton/HostNewGateway?token=@TOKE
 
 ![Hosted create gateway profile page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/V3/HostedCreateGatewayPage.png)
 
-Update a Credit Card / eCheck
+Update a Gateway Profile
 -----------------------------
 
 Build the hosted update gateway profile page URL this way:
