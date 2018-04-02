@@ -35,7 +35,7 @@ We have a [detailed guide](Sections/Wallet%20Page.md) for getting started with e
 Gateway Profile Page
 -----------
 
-The wallet page is used for embedding a page to create or modify credit card or eCheck entries.
+The gateway profile page is used for embedding a page to create or modify gateway account profile.
 
 We have a [detailed guide](Sections/Gateway%20Profile%20Page.md) for getting started with embedding the gateway profile page into your application.
 
