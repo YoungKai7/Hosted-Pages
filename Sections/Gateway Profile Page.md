@@ -1,6 +1,6 @@
 ## Hosted Gateway Profile Page
 
-Ability to embed PayFabric’s gateway profile page in an iFrame to allow internal admin user to manage gateway account profile from application.
+Ability to embed PayFabric’s gateway profile page in an iFrame to allow internal admin user to manage gateway profile from application.
 
 Before embedding the gateway profile page, please ensure the following:
 
@@ -12,7 +12,7 @@ Create a Gateway Profile
 
 Build the hosted create gateway profile page URL this way:
 
-https://sandbox.payfabric.com/Payment/Web/Transaciton/HostNewGateway?token=@TOKEN  
+https://sandbox.payfabric.com/payment/web/transaciton/hostnewgateway?token=@TOKEN  
 
 ![Hosted create gateway profile page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/V3/HostedCreateGatewayPage.png)
 
@@ -21,7 +21,7 @@ Update a Gateway Profile
 
 Build the hosted update gateway profile page URL this way:
 
-https://sandbox.payfabric.com/Payment/Web/Transaction/HostEditGateway?id={@GATEWAYID}&token={@TOKEN}
+https://sandbox.payfabric.com/payment/web/transaction/hosteditgateway?id={@GATEWAYID}&token={@TOKEN}
 
 ![Hosted update gateway profile page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/V3/HostedUpdateGatewayPage.png) 
 
