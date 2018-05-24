@@ -5,7 +5,7 @@ The PayFabric hosted payment page is used for embedding the payment page into yo
 
 Before embedding the payment page, please ensure the following:
 
-1. Generate a [Security Token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Authentication.md#security-token).  Assume the token value is @TOKEN.
+1. Generate a [Security Token](/Sections/Security%20Token.md).  Assume the token value is @TOKEN.
 2. Generate a new transaction, see our [API documentation](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Transactions.md#create-a-transaction) for how.  Assume the transaction key is @TRXKEY.
  
 Build the payment hosted page URL this way:
