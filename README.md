@@ -12,7 +12,7 @@ Where do I start?
 Want to get started with PayFabric Hosted Page integration? Here's a quick check list:
 
 1. Register and then configure a PayFabric account, check out the [Guide](https://github.com/PayFabric/Portal/tree/master/PayFabric/Sections/Configure%20Portal.md) to learn how.
-2. Read up on how to generate a [Security Token](https://github.com/PayFabric/PayFabric-APIs/blob/master/PayFabric/Sections/Authentication.md#security-token) as our hosted pages require this. 
+2. Read up on how to generate a [Security Token](Sections/Security%20Token.md) as our hosted pages require this. 
 3. Choose the hosted page you need to work with.
 4. Have a question or need help? Contact <support@payfabric.com>.
 
