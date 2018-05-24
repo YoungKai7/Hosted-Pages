@@ -4,7 +4,7 @@ Security Token
 Clients are able to use _Device ID_ and _Device Password_ ([How to Create Device ID and Device Password](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Configure%20Portal.md#devices)) to generate _Security Tokens_.
 Security tokens are one-time use authorization credentials. You should only use this authentication method in secure environments. 
 
-Generate Security Token C# Sample Code Snippet
+Generate Security Token C# Sample Code Snippet, for more sample codes, click [here](https://github.com/PayFabric/APIs/tree/master/PayFabric/Samples).
 --------------
 
                 // Replace url when going live
