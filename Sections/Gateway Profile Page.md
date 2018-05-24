@@ -4,7 +4,7 @@ Ability to embed PayFabric’s gateway profile page in an iFrame to allow intern
 
 Before embedding the gateway profile page, please ensure the following:
 
-1. Generate a [Security Token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Authentication.md#security-token).  Assume the token value is @TOKEN.
+1. Generate a [Security Token](/Sections/Security%20Token.md).  Assume the token value is @TOKEN.
 2. If updating, retrieve the unique gateway ID, see our [API documentation](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Payment%20Gateway%20Profiles.md#retrieve-a-payment-gateway-profile) for how.  Assume the gateway ID is @GATEWAYID.
 
 Create a Gateway Profile
