@@ -44,6 +44,12 @@ Customize Page
 
 Both the payment and wallet pages are able to be customized with a custom theme consisting of custom CSS and JavaScript, which will be inserted into and applied to the hosted pages.  We have a [guide](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Themes.md) for creating and using these customized themes.
 
+Payment Terminals Signature Page
+-----------
+
+The Payment Terminals Signature page is used to retrieve the PNG version of the signature for the transaction created from Payment Terminals.
+
+We have a [detailed guide](Sections/Payment%20Terminals%20Signature%20Page.md) for getting started with embedding the signature page into your application.
 
 Help us make it better
 ----------------------
