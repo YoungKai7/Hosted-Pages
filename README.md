@@ -54,9 +54,9 @@ We have a [detailed guide](Sections/Payment%20Terminals%20Signature%20Page.md) f
 Retrieve Response
 -----------
 
-When you embed a payment/wallet hosted page in a Windows Forms application, you may need to retrieive the response from the hosted page for the Windows Forms application,
+When you embed a payment/wallet hosted page in a Windows Forms application, you may need to retrieve the response from the hosted page for the Windows Forms application,
 
-We have a [detailed guide](Sections/Retrieve%20Response.md) for retrieving response of embeded hosted pages in your Windows Forms application.
+We have a [detailed guide](Sections/Retrieve%20Response.md) for retrieving response of embedded hosted pages in your Windows Forms application.
 
 Help us make it better
 ----------------------
