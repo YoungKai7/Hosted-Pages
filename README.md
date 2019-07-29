@@ -51,6 +51,13 @@ The Payment Terminals Signature page is used to retrieve the PNG version of the 
 
 We have a [detailed guide](Sections/Payment%20Terminals%20Signature%20Page.md) for getting started with embedding the signature page into your application.
 
+Retrieve Response
+-----------
+
+When you embed a payment/wallet hosted page in a Windows Forms application, you may need to retrieive the response from the hosted page for the Windows Forms application,
+
+We have a [detailed guide](Sections/Retrieve%20Response.md) for retrieving response of embeded hosted pages in your Windows Forms application.
+
 Help us make it better
 ----------------------
 Please tell us how we can make the Hosted Pages better. If you have a specific feature request or if you found a bug, please contact <support@payfabric.com>. Also, feel free to branch these documents and send a pull request with improvements!
