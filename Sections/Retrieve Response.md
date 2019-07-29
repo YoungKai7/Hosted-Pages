@@ -15,6 +15,7 @@ Example
 --------------------
 
 1. Load the hosted page in a Web Browser Control form and register TrxNotifyScript() on the form.
+```C#
 namespace MyProject
 {
     private void PF_HostedPage_Form_Load(object sender, EventArgs e)
@@ -22,8 +23,9 @@ namespace MyProject
         checkOutPage_web.ObjectForScripting = new TrxNotifyScript();
     }
 }
-
-2. Class TrxNotifyScript provides methods to return the results from the hosted page:
+```
+2. Class TrxNotifyScript provides methods to return the results from the hosted page.
+```C#
 namespace MyProject
 {
     [System.Runtime.InteropServices.ComVisibleAttribute(true)]
@@ -70,6 +72,6 @@ namespace MyProject
         }
     }
 }
-
+```
 
 
