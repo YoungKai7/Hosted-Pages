@@ -1,7 +1,7 @@
 Retrieve Response
 ===================
 
-Below methods serves the purpose of retrieving the response from embeded the hosted page in a Windows orm.
+Below methods serves the purpose of retrieving the response from embeded the hosted page in a Windows Forms application.
 
 `OnTransactionCompleted(TrxKey, RespStatus, ResultCode, AuthCode, ResponseMsg, OriginationID, RespTrxTag, CVV2Response, AVSAddressResponse, AVSZipResponse, IAVSAddressResponse)` will be invoked when the transaction has been processed on hosted payment page. 
 
@@ -14,7 +14,7 @@ Below methods serves the purpose of retrieving the response from embeded the hos
 Example
 --------------------
 
-1. Load the hosted page in a Web Browser Control form and register TrxNotifyScript() on the form.
+1. Load the hosted page in a Web Browser Control form and register TrxNotifyScript() on the Windows Form.
 ```C#
 namespace MyProject
 {
