@@ -18,7 +18,7 @@ https://sandbox.payfabric.com/Payment/Web/Wallet/Create?customer={CUSTOMER_NUMBE
 {CUSTOMER_NUMBER} = Your customers unique identifier  
 {TENDER} = *CreditCard* or *ECheck*
 
-![Hosted create wallet page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/v2/HostedCreateWalletPage.png "Hosted create wallet page")
+![Hosted create wallet page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedCreateWalletPage.png "Hosted create wallet page")
 
 
 Update a Credit Card / eCheck
@@ -28,7 +28,7 @@ Build the hosted update wallet page URL this way:
 
 https://sandbox.payfabric.com/Payment/Web/Wallet/edit?card={@CARDID}&token={@TOKEN}
 
-![Hosted update wallet page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/v2/HostedEditWalletPage.png "Hosted update wallet page") 
+![Hosted update wallet page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedEditWalletPage.png "Hosted update wallet page") 
 
 Options
 -------
