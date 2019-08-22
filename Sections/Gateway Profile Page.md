@@ -14,7 +14,7 @@ Build the hosted create gateway profile page URL this way:
 
 https://sandbox.payfabric.com/payment/web/transaciton/hostnewgateway?token=@TOKEN  
 
-![Hosted create gateway profile page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/V3/HostedCreateGatewayPage.png)
+![Hosted create gateway profile page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedCreateGatewayPage.png)
 
 Update a Gateway Profile
 -----------------------------
@@ -23,7 +23,7 @@ Build the hosted update gateway profile page URL this way:
 
 https://sandbox.payfabric.com/payment/web/transaction/hosteditgateway?id={@GATEWAYID}&token={@TOKEN}
 
-![Hosted update gateway profile page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/V3/HostedUpdateGatewayPage.png) 
+![Hosted update gateway profile page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedUpdateGatewayPage.png) 
 
 Options
 -------
