@@ -12,7 +12,7 @@ Build the payment hosted page URL this way:
 
 https://sandbox.payfabric.com/Payment/Web/Transaction/Process?key={@TRXKEY}&token={@TOKEN}
 
-![Hosted payment page](https://s3-us-west-1.amazonaws.com/github-screenshot-repository/v2/HostedPaymentPage.png "Hosted payment page") 
+![Hosted payment page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedPaymentPage.png "Hosted payment page") 
 
 Options
 -------
