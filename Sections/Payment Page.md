@@ -34,4 +34,4 @@ PayFabric hosted payment page accepts the below query string parameters to add o
 |useshipping|	When the value is `1`, PayFabric's checkout hosted page URL will load history shipping addresses. When the value is '0', PayFabric's chekcout hosted page will NOT load history shipping addresses. Default value is `1`|
 |AuthorizationType| The authorization type of the transaction, valid values are ``Reauthorization``, ``Resubmission``, ``Incremental`` or ``NotSet``|
 |TrxSchedule| The type authorization of transaction to be processed, valid values are ``Unscheduled``, ``ScheduledInstallment``, ``ScheduledRecurring`` or ``NotSet``|
-|TrxInitiation| The entity that initiated the transaction, valid values are ``Merchant``, ``Customer`` or ``NotSet``|
+|TrxInitiation| The entity that initiated the transaction, valid values are ``Merchant``, ``Customer`` or ``NotSet``| 
