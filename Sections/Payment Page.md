@@ -35,4 +35,3 @@ PayFabric hosted payment page accepts the below query string parameters to add o
 |AuthorizationType| The authorization type of the transaction, valid values are ``Reauthorization``, ``Resubmission``, ``Incremental`` or ``NotSet``|
 |TrxSchedule| The type authorization of transaction to be processed, valid values are ``Unscheduled``, ``ScheduledInstallment``, ``ScheduledRecurring`` or ``NotSet``|
 |TrxInitiation| The entity that initiated the transaction, valid values are ``Merchant``, ``Customer`` or ``NotSet``| 
-=======
