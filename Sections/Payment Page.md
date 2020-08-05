@@ -14,6 +14,15 @@ https://sandbox.payfabric.com/Payment/Web/Transaction/Process?key={@TRXKEY}&toke
 
 ![Hosted payment page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedPaymentPage.png "Hosted payment page") 
 
+Hosted Payment Page with Surcharge
+===================================
+PayFabric provide the ability for merchants to support surcharge in order to pass on their processing cost to the end customers for EVO gateway.
+1. PayFabric’s hosted payment page added 3 additional fields to support surcharge: Surcharge Rate, Surcharge Amount and Final Amount. 
+2. By default, these fields are hidden and will only available if surcharge rate is enabled on gateway profile setting for the in-used gateway profile. Surcharge Amount, Rate and Final Amount will be read-only as they’re calculated fields by PayFabric based on the provided rate. 
+3. It’s up to 3rd party application to design and structure these 3 fields using CSS/JS so it fits their application’s UI and UX. 
+![HostedPaymentPageWithSurcharge](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedPaymentPageWithSurcharge.png "HostedPaymentPageWithSurcharge") 
+
+
 Options
 -------
 
