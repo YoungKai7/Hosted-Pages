@@ -7,6 +7,7 @@ Before embedding the payment page, please ensure the following:
 
 1. Generate a [Security Token](/Sections/Security%20Token.md).  Assume the token value is @TOKEN.
 2. Generate a new transaction, see our [API documentation](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Transactions.md#create-a-transaction) for how.  Assume the transaction key is @TRXKEY.
+
 **Note**: PayFabric will reject to load a _Verify_ transaction on hosted payment page with below message 
 _'Cannot load specified transaction due to invalid transaction type. Transaction key is 21012600548450.'_
  
