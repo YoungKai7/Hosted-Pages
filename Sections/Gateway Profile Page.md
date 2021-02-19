@@ -12,7 +12,7 @@ Create a Gateway Profile
 
 Build the hosted create gateway profile page URL this way:
 
-https://sandbox.payfabric.com/payment/web/transaciton/hostnewgateway?token=@TOKEN  
+https://sandbox.payfabric.com/payment/web/transaction/hostnewgateway?token=@TOKEN  
 
 ![Hosted create gateway profile page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedCreateGatewayPage.png)
 
