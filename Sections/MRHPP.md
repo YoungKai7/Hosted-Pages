@@ -1,7 +1,6 @@
 Mobile Hosted Payment Page
 ==========================
-
-The PayFabric mobile hosted payment page is used for embedding the payment page into your application to allow your users to process a transaction.
+A new version of the Hosted Payment page has been designed and developed, to be more streamlined and intended for a shopping cart/checkout experience, it will be only obtaining the minimum required information and no other elements aside from Payment Information, Billing Information will be able to be input into the form.  All other fields such as Transaction Type, Gateway Profile, Transaction amount etc must be set during the initial Create Transaction API call.
 
 Before embedding the payment page, please ensure the following:
 
