@@ -15,10 +15,8 @@ https://sandbox.payfabric.com/Payment/Web/Transaction/ResponsiveProcess?token={@
 
 Mobile Hosted Payment Page with Surcharge
 ===================================
-PayFabric provide the ability for merchants to support surcharge in order to pass on their processing cost to the end customers for EVO gateway.
-1. PayFabric’s mobile hosted payment page supports surcharge
-2. By default, surcharge info are hidden and will only available if surcharge rate is enabled on gateway profile setting for the in-used gateway profile. Surcharge Amount, Surcharge Rate and Final Amount will be read-only as they’re calculated fields by PayFabric based on the provided rate. 
-3. It’s up to 3rd party application to design and structure these 3 fields using CSS/JS to make it fits on your application’s UI and UX. 
+PayFabric provide the ability for merchants to support surcharge on Mobile Hosted Payment page in order to pass on their processing cost to the end customers for EVO gateway.
+Only when customer using credit card PF will show the surcharge rate and surcharge amount on Mobile Hosted Payment page.
 
 ![Mobile Hosted payment page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/MobileHostedPaymentPage.png "Mobile Hosted payment page")
 
