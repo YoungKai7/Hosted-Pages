@@ -24,6 +24,12 @@ The payment page is used for embedding a page to process an existing transaction
 
 We have a [detailed guide](Sections/Payment%20Page.md) for getting started with embedding the payment page into your application.
 
+Mobile Hosted Payment Page
+--------------------------
+
+The mobile hosted payment page enhances user experience by providing a seamless mobile experience on a variety of mobile devices.
+
+We have a [detailed guide](Sections/MRHPP.md) for getting started with embedding the new mobile payment page into your application.
 
 Wallet Page
 -----------
