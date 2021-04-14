@@ -15,8 +15,8 @@ https://sandbox.payfabric.com/Payment/Web/Transaction/ResponsiveProcess?token={@
 
 Mobile Hosted Payment Page with Surcharge
 ===================================
-PayFabric provide the ability for merchants to support surcharge on Mobile Hosted Payment page in order to pass on their processing cost to the end customers for EVO gateway.
-Only when customer using credit card PF will show the surcharge rate and surcharge amount on Mobile Hosted Payment page.
+PayFabric provides the ability for merchants to support surcharge on Mobile Hosted Payment page in order to pass on processing cost to the end customers for EVO gateway.
+Only when customer is using credit card, PayFabric will shows the surcharge rate and surcharge amount on Mobile Hosted Payment page.
 
 ![Mobile Hosted payment page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/MobileHostedPaymentPage.png "Mobile Hosted payment page")
 
@@ -29,5 +29,5 @@ PayFabric mobile hosted payment page accepts the below query string parameters t
 | QueryString| Description | 
 | :------------- | ------------- | 
 |UseDefaultWallet|When the value is `0`, then the default wallet won't load out while open mobile hosted payment page. And if you set the value as `1`, then PayFabric will load the default wallet on hosted payment page by default.  Default value is `1`.|
-|ThemeName|This parameter is to support 3rd party dynamically pass into theme name via query string. If the value is an existing theme name, then page will use this theme; If the value is an nonexistent theme name, then page will use the device default theme.|
+|ThemeName|This parameter is for supporting 3rd party dynamically pass into theme name via query string. If the value is an existing theme name, then page will use this theme; If the value is an nonexistent theme name, then page will use the device default theme.|
 |UseBluefin|This parameter will take affect when [BlueFin Profile](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Bluefin.md) get enabled. When the value is '0', only regular keyboard entry for credit card is available, when the value is `1`, only encryption key entry via Bluefin device for credit card is available, when the value is `2`, both regular keyboard & encryption key entry for credit card is available.|
