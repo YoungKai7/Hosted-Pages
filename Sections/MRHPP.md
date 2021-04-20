@@ -5,7 +5,7 @@ A new version of the Hosted Payment page has been designed and developed, to be 
 Before embedding the payment page, please ensure the following:
 
 1. Generate a new transaction, see our [API documentation](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Transactions.md#create-a-transaction) for how. 
-2. Generate a [JWT](/Sections/jwttoken.md) with the transaction key.  Assume the token value is @TOKEN.
+2. Generate a [JWT token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/JWTToken.md) with the transaction key.  Assume the token value is @TOKEN.
 
 Build the payment hosted page URL this way:
 
