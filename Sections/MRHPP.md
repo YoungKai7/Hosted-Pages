@@ -34,5 +34,7 @@ PayFabric mobile hosted payment page accepts the below query string parameters t
 
 Mobile Hosted Payment Page 3D Secure support
 ======================================
-3-D Secure 2.0 is a protocol that was developed in compliance with the PSD2 (Payment Service Directive 2.0) mandate to make online payments more secure through advanced cardholder verification. 3-D Secure only spported for the EVO -> Evo eService processor.
+3-D Secure 2.0 is a protocol that was developed in compliance with the PSD2 (Payment Service Directive 2.0) mandate to make online payments more secure through advanced cardholder verification. 
+
+Both 3D Secure 1.0 and 3-D Secure 2.0 are spported on Mobile Hosted Payment Page for the EVO -> Evo eService processor.
 
