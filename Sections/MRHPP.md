@@ -31,3 +31,8 @@ PayFabric mobile hosted payment page accepts the below query string parameters t
 |ThemeName|This parameter is for supporting 3rd party dynamically pass into theme name via query string. If the value is an existing theme name, then page will use this theme; If the value is an nonexistent theme name, then page will use the device default theme.|
 |UseBluefin|This parameter will take affect when [BlueFin Profile](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Bluefin.md) get enabled. When the value is '0', only regular keyboard entry for credit card is available, when the value is `1`, only encryption key entry via Bluefin device for credit card is available, when the value is `2`, both regular keyboard & encryption key entry for credit card is available.|
 |Accepttender|This parameter is to specify the accepted payment methods, the list of methods is: CreditCard, ECheck and PayPal, If accept multiple payment methods, then seperate the methods with ','.|
+
+Mobile Hosted Payment Page 3D Secure support
+======================================
+3-D Secure 2.0 is a protocol that was developed in compliance with the PSD2 (Payment Service Directive 2.0) mandate to make online payments more secure through advanced cardholder verification. 3-D Secure only spported for the EVO -> Evo eService processor.
+
