@@ -48,4 +48,4 @@ Hosted Create Wallet Page 3D Secure support
 ============================================
 To enable the 3D Secure validation on hosted create wallet page, [Credit Card Validation](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/PayFabric%20Settings.md#transaction-options) setting must be enabled and the validate gateway must be EVO eService.
 
-<b>Note:</b> Hosted Create Wallet Page only support 3D Secure 2.0.
+<b>Note:</b> Hosted Create Wallet Page only supports 3D Secure 2.0, doesn't support 3D Secure 1.0.
