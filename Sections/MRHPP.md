@@ -33,6 +33,6 @@ PayFabric mobile hosted payment page accepts the below query string parameters t
 |Accepttender|This parameter is to specify the accepted payment methods, the list of methods is: CreditCard, ECheck and PayPal, If accept multiple payment methods, then seperate the methods with ','.|
 
 
-Embed Pay by PayPal to your page
+Support Alternative Payment Methods with MRHPP
 ================================
-Please check the detailed instructions for [JavaScript SDK](JavaScript%20SDK.md)
+Please check the detailed instructions for [Alternative Payment Methods](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/APM.md)
