@@ -29,9 +29,10 @@ Mobile Hosted Payment Page with Surcharge
 ===================================
 PayFabric provides the ability for merchants to support surcharge on Mobile Hosted Payment page in order to pass on processing cost to the end customers for EVO gateway.
 Only when customer is using credit card, PayFabric will shows the surcharge rate and surcharge amount on Mobile Hosted Payment page.
+
 Surcharge amount = (Transaction amount + Tip amount) x Surcharge percentage
 
-![Mobile Hosted payment page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/MobileHostedPaymentPage.png "Mobile Hosted payment page")
+![Mobile Hosted payment page With Surcharge Tip](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/MobileHostedPaymentPageWithSurchargeTip.png "Mobile Hosted payment page With Surcharge Tip")
 
 
 Mobile Hosted Payment Page with Tip 
