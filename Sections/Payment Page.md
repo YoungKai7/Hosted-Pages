@@ -46,3 +46,18 @@ PayFabric hosted payment page accepts the below query string parameters to add o
 |AuthorizationType| The authorization type of the transaction, valid values are ``Reauthorization``, ``Resubmission``, ``Incremental`` or ``NotSet``|
 |TrxSchedule| The type authorization of transaction to be processed, valid values are ``Unscheduled``, ``ScheduledInstallment``, ``ScheduledRecurring`` or ``NotSet``|
 |TrxInitiation| The entity that initiated the transaction, valid values are ``Merchant``, ``Customer`` or ``NotSet``| 
+
+Terminal Entry
+==============
+To enable terminal entry on the payment page, please ensure the following:
+1. Create a terminal in [Payment Terminal](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Payment%20Terminals.md) Page
+2. Set the terminal for your [Device](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Payment%20Terminals.md#device-name)
+3. Set the [Processing Method](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Payment%20Terminals.md#processing-method) as 'Both EMV and Web Entry' or 'EMV only'.
+
+Then the hosted payment page will show EMV entry.
+![Terminal Entry](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/GiftHPP.png)
+
+**Note** 
+1. The Gift Card button will show on the EMV entry only when you [Allowed Gift Card](https://github.com/PayFabric/Portal/blob/R19/PayFabric/Sections/Payment%20Terminals.md#allow-gift-card)
+2. When you select 'Both EMV and Web Entry', then you can switch the processing method on the buttom of the hosted page 
+
