@@ -57,5 +57,5 @@ Both 3D Secure 1.0 and 3D Secure 2.0 are supported on Mobile Hosted Payment Page
 
 Mobile Hosted Payment Page Gift Card Support
 ======================================
-PayFabric provides the ability for merchants to support process transaction with Gift Card on Mobile Hosted Payment page. But the transaction used to generate [JWT token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/JWTToken.md) must use Evo Gift gateway, refer [Gateway Account Profile](https://github.com/PayFabric/Portal/blob/R19/PayFabric/Sections/Gateway%20Configuration.md#evo) for how to create the Evo Gift Gateway.
+PayFabric provides the ability for merchants to support process transaction with Gift Card on Mobile Hosted Payment page, the transaction key must be created with EVO Gift Card gateway for credating [JWT token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/JWTToken.md), refer [Gateway Account Profile](https://github.com/PayFabric/Portal/blob/R19/PayFabric/Sections/Gateway%20Configuration.md#evo) for how to create the EVO Gift Card Gateway.
 ![GiftMRHPP](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Screenshots/GiftCardMRHPP.png)
