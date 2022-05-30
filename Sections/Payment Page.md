@@ -18,15 +18,15 @@ https://sandbox.payfabric.com/Payment/Web/Transaction/Process?key={@TRXKEY}&toke
 
 Hosted Payment Page with Surcharge
 ===================================
-PayFabric provide the ability for merchants to support surcharge in order to pass on their processing cost to the end customers for EVO gateway.
+PayFabric provide the ability for merchants to support Surcharge in order to pass on their processing cost to the end customers for EVO gateway.
 1. PayFabric’s hosted payment page added 3 additional fields to support surcharge: Surcharge Rate, Surcharge Amount and Final Amount. 
-2. By default, these fields are hidden and will only available if surcharge rate is enabled on gateway profile setting for the in-used gateway profile. Surcharge Amount, Surcharge Rate and Final Amount will be read-only as they’re calculated fields by PayFabric based on the provided rate. 
+2. By default, these fields are hidden and will only available if Surcharge Rate is enabled on gateway profile setting for the in-used gateway profile. Surcharge Amount, Surcharge Rate and Final Amount will be read-only as they’re calculated fields by PayFabric based on the provided rate. 
 3. It’s up to 3rd party application to design and structure these 3 fields using CSS/JS to make it fits on your application’s UI and UX. 
 ![HostedPaymentPageWithSurcharge](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedPaymentPageWithSurcharge.png "HostedPaymentPageWithSurcharge") 
 
 Hosted Payment Page for Gift Card
 ===================================
-PayFabric provide the ability for merchants to support gift card on hosted payment page. Open the transaction which is using Evo Gift gateway, refer [Gateway Account Profile](https://github.com/PayFabric/Portal/blob/R19/PayFabric/Sections/Gateway%20Configuration.md#evo) for how to create the Evo Gift Gateway.
+PayFabric provide the ability for merchants to support Gift Card on hosted payment page. Open the transaction which is using EVO Gift gateway, refer [Gateway Account Profile](https://github.com/PayFabric/Portal/blob/R19/PayFabric/Sections/Gateway%20Configuration.md#evo) for how to create the EVO Gift Gateway.
 ![GiftHPPWeb](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Screenshots/GiftHPPWEB.png)
 
 Options
