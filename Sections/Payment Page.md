@@ -26,7 +26,7 @@ PayFabric provide the ability for merchants to support Surcharge in order to pas
 
 Hosted Payment Page for Gift Card
 ===================================
-PayFabric provide the ability for merchants to support Gift Card on hosted payment page. Open the transaction which is using EVO Gift gateway, refer [Gateway Account Profile](https://github.com/PayFabric/Portal/blob/R19/PayFabric/Sections/Gateway%20Configuration.md#evo) for how to create the EVO Gift Gateway.
+PayFabric provide the ability for merchants to support Gift Card on hosted payment page. Open the transaction which is using EVO Gift gateway, refer [Gateway Account Profile](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Gateway%20Configuration.md#evo) for how to create the EVO Gift Gateway.
 ![GiftHPPWeb](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Screenshots/GiftHPPWEB.png)
 
 Options
@@ -62,6 +62,6 @@ Then the hosted payment page will show EMV entry.
 ![Terminal Entry](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Screenshots/GiftHPP.png)
 
 **Note** 
-1. The Gift Card button will show on the EMV entry only when you [Allowed Gift Card](https://github.com/PayFabric/Portal/blob/R19/PayFabric/Sections/Payment%20Terminals.md#allow-gift-card)
+1. The Gift Card button will show on the EMV entry only when you [Allowed Gift Card](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Payment%20Terminals.md#allow-gift-card)
 2. When you select 'Both EMV and Web Entry', then you can switch the processing method on the buttom of the hosted page 
 
