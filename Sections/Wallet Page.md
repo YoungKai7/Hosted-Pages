@@ -19,6 +19,7 @@ https://sandbox.payfabric.com/Payment/Web/Wallet/Create?customer={CUSTOMER_NUMBE
 {TENDER} = *CreditCard* or *ECheck*
 
 ![Hosted create wallet page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedCreateWalletPage.png "Hosted create wallet page")
+
 (UPDATE: "Close" buttons are now labeled as "Back")
 
 
@@ -30,6 +31,7 @@ Build the hosted update wallet page URL this way:
 https://sandbox.payfabric.com/Payment/Web/Wallet/edit?card={@CARDID}&token={@TOKEN}
 
 ![Hosted update wallet page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedEditWalletPage.png "Hosted update wallet page")
+
 (UPDATE: "Close" buttons are now labeled as "Back")
 
 Optional Parameters
