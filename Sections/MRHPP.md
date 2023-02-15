@@ -22,8 +22,8 @@ PayFabric mobile hosted payment page accepts the below query string parameters t
 | QueryString| Description | 
 | :------------- | ------------- | 
 |ThemeName|This parameter is for supporting 3rd party dynamically pass into theme name via query string. If the value is an existing theme name, then page will use this theme; If the value is an nonexistent theme name, then page will use the device default theme.|
-|UseBluefin|This parameter will take affect when [BlueFin Profile](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Bluefin.md) get enabled. When the value is '0', only regular keyboard entry for credit card is available, when the value is `1`, only encryption key entry via Bluefin device for credit card is available, when the value is `2`, both regular keyboard & encryption key entry for credit card is available.|
-|Accepttender|This parameter is to specify the accepted payment methods, the list of methods is: CreditCard, ECheck and PayPal, If accept multiple payment methods, then seperate the methods with ','.|
+|UseBluefin|This parameter will take affect when [BlueFin Profile](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Bluefin.md) get enabled. When the value is `0`, only regular keyboard entry for credit card is available, when the value is `1`, only encryption key entry via Bluefin device for credit card is available, when the value is `2`, both regular keyboard & encryption key entry for credit card is available.|
+|Accepttender|This parameter is to specify the accepted payment methods, the list of methods is: `CreditCard`, `ECheck`, `GooglePay`, `ApplePay`, and `PayPal`, If accept multiple payment methods, then seperate the methods with <kbd><samp>,</samp></kbd>.|
 |UseDefaultWallet|When the value is `0`, then the default wallet won't load out while open hosted payment page. And if you set the value as `1`, then PayFabric will load the default wallet on hosted payment page by default.  Default value is `1`.|
 
 
@@ -58,4 +58,5 @@ Both 3D Secure 1.0 and 3D Secure 2.0 are supported on Mobile Hosted Payment Page
 Mobile Hosted Payment Page Gift Card Support
 ======================================
 PayFabric provides the ability for merchants to support process transaction with Gift Card on Mobile Hosted Payment page, the transaction key must be created with EVO Gift Card gateway for credating [JWT token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/JWTToken.md), refer [Gateway Account Profile](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Gateway%20Configuration.md#evo) for how to create the EVO Gift Card Gateway.
+
 ![GiftMRHPP](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Screenshots/GiftCardMRHPP.png)
