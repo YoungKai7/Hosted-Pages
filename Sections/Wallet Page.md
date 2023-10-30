@@ -34,35 +34,6 @@ https://sandbox.payfabric.com/Payment/Web/Wallet/edit?card={@CARDID}&token={@TOK
 
 (UPDATE: "Close" buttons are now labeled as "Back")
 
-Responsive Hosted Wallet Page  
-====================================
-A new version of the Hosted Wallet page has been designed and developed, With this Mobile Responsive Wallet Hosted page, the integrator will be able to create or update their PayFabric wallets on Mobile or tablet. 
-
-Create a Credit Card / eCheck
------------------
-Before embedding the hosted create wallet page, please ensure the following:
-
-1. Generate a [JWT token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/JWTToken.md) with the @CustomerName.  Assume the token value is @TOKEN.
-
-Build the Hosted Create Wallet Page URL this way:
-
-https://sandbox.payfabric.com/payment/web/wallet/ResponsiveCreate?token={@TOKEN}
-![MRHCWP](https://github.com/PayFabric/Hosted-Pages/blob/master/Sections/MRHCWP.png "MRHCWP")
-
-
-Edit a Credit Card / eCheck   
-------------------------
-Before embedding the hosted edit wallet page, please ensure the following:
-
-1. Get a wallet ID, assume the wallet ID is @ID.
-2. Generate a [JWT token](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/JWTToken.md) with the @ID.  Assume the token value is @TOKEN.
-
-Build the Hosted Edit Wallet Page URL this way:
-
-https://sandbox.payfabric.com/payment/web/wallet/ResponsiveEdit?token={@TOKEN}
-
-![MRHEWP](https://github.com/PayFabric/Hosted-Pages/blob/master/Sections/MRHEWP.png "MRHEWP")
-
 Optional Parameters
 -------
 
@@ -76,10 +47,7 @@ PayFabric hosted wallet page accepts the query string parameters below. Separate
 |ReturnURI|When a valid URL is provided in ReturnURI, after the wallet record is saved, the hosted wallet page will redirect the user to the URL specified with the unique Wallet ID appended to the URL.  Note: This parameter is only supported with the create wallet operation.|
 |isusenewtheme|	When the value is `1`, PayFabric's hosted page URL will trigger the V3 layout instead of the V2 Layout. The default value is `0`. **Note:** This query string only works for the non-responsive hosted create/edit wallet pages.|
 |UseBluefin|This parameter will take affect when [BlueFin Profile](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Bluefin.md) get enabled. When the value is '0', only regular keyboard entry for the credit card is available, when the value is `1`, only encryption key entry via Bluefin device for the credit card is available, when the value is `2`, both regular keyboard & encryption key entry for the credit card is available.|
-|TransactionInitial|	This parameter specifies the wallet creation/updating initiated by the Merchant or Customer.|
-|AcceptTender|This query string specifies the wallet tender when opening the responsive hosted create wallet page.|
-
-
+|TrxInitial|	This parameter specifies the wallet creation/updating initiated by the Merchant or Customer.|
 
 Hosted Create Wallet Page 3D Secure Support
 ============================================
