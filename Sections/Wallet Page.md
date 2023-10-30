@@ -47,7 +47,7 @@ Before embedding the hosted create wallet page, please ensure the following:
 Build the Hosted Create Wallet Page URL this way:
 
 https://sandbox.payfabric.com/payment/web/wallet/ResponsiveCreate?token={@TOKEN}
-![MRHCWP](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/MRHCWP.png "MRHCWP")
+![MRHCWP](https://github.com/PayFabric/Hosted-Pages/blob/master/Sections/MRHCWP.png "MRHCWP")
 
 
 Edit a Credit Card / eCheck   
@@ -61,7 +61,7 @@ Build the Hosted Edit Wallet Page URL this way:
 
 https://sandbox.payfabric.com/payment/web/wallet/ResponsiveEdit?token={@TOKEN}
 
-![MRHEWP](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/MRHCWP.png "MRHEWP")
+![MRHEWP](https://github.com/PayFabric/Hosted-Pages/blob/master/Sections/MRHEWP.png "MRHEWP")
 
 Optional Parameters
 -------
