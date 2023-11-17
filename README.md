@@ -38,6 +38,13 @@ The wallet page is used for embedding a page to create or modify credit card or 
 
 We have a [detailed guide](Sections/Wallet%20Page.md) for getting started with embedding the wallet page into your application.
 
+Mobile Hosted Wallet Page
+-----------
+
+The mobile hosted wallet page is used for embedding a page to create or modify credit card or eCheck entries on mobile or tablet devices.
+
+We have a [detailed guide](Sections/MRHWP.md) for getting started with embedding the wallet page into your application.
+
 Gateway Profile Page
 -----------
 
