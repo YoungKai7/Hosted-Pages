@@ -47,7 +47,9 @@ Support Alternative Payment Methods with MRHPP
 ================================
 Please check the detailed instructions for [Alternative Payment Methods](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/APM.md)
 
-<b>Note:</b> Alternative payment methods are not available for the transaction enable surcharge or enabled tip.
+<b>Note:</b> 
+1. Alternative payment methods are not available for the transaction enable surcharge or enabled tip.
+2. Additionally, if you are using an iFrame approach for Google Pay, then you must add `allow="payment"` attribute to your iframe.
 
 Mobile Hosted Payment Page 3D Secure support
 ======================================
