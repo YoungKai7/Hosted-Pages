@@ -11,3 +11,5 @@ Before embedding the signature page, please ensure the following:
 Open the signature page with this URL:
 
 https://sandbox.payfabric.com/Payment/Web/Transaction/GetSignature?key={@TRXKEY}&token={@TOKEN}
+
+Test
