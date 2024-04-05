@@ -1,24 +1,23 @@
-# Payment Processing
+# Responsive Hosted Payment Page - JS SDK
 
-** insert table of contents
+PayFabric provides a JavaScript library to support both Alternative Payment Methods as well as interaction with our new responsive Hosted Payment Page. This JavaScript Library hosted by PayFabric will be responsible for configuring and presenting a payment popup or element that supports our hosted payment page as well as any alternative payment methods PayFabric supports today or into the future.
 
-** insert overview
+PayFabric released a new version of our JavaScript SDK during our Nov. release of PayFabric. This new version supports a new responsive wallet page. Looking for previous versions of our JavaScript SDK? Click V1 and V2.
 
-## Payment Page Feature Comparison
+## Overview
 
-|Feature| RHPP (JS SDK) |RHPP (iFrame) | HPP (legacy)|
-|---| ------- |-------------| -----|
-|User Interface| Modern | Modern| Legacy|
-|Alternative Payment Methods| Apple Pay, Google Pay, PayPal/Venmo      | Google Pay | Not Supported |
-|Single Page UI Framework Support (React, Vue, etc.)| Seamless Integration | Requires Reloading Page| Requires Reloading Page|
-|Callback Support| Full Support| Mostly Supported
-|Mobile Support| Supported  | Supported      |   Not Supported |
-|BlueFin Support| Supported| Supported | Supported|
-|Customizability| Fully Customizable| Fully Customizable| Fully Customizable|
-|Save For Later Transaction| Not Supported  | Not Supported      |   Supported |
-|Payment Terminals| Not Supported | Not Supported      |   PAX S300, D210, and PX7  |
+** Overview Intro
 
-## Hosted Payment Page
+** Generate JWT Token
+
+** Payment Page Link
+
+** Available options
+
+** Retrieve Response
+
+
+## Generate JWT Token
 
 ** Overview Intro
 
@@ -33,7 +32,7 @@
 ** Retrieve Response
 
 
-## Alternative Payment Methods
+## Payment Pages
 
 Please check the detailed instructions for [Alternative Payment Methods](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/APM.md)
 
@@ -41,13 +40,13 @@ Please check the detailed instructions for [Alternative Payment Methods](https:/
 1. Alternative payment methods are not available for the transaction enable surcharge or enabled tip.
 2. Additionally, if you are using an iFrame approach for Google Pay, then you must add `allow="payment"` attribute to your iframe.
 
-## 3D Secure Support
+## Available Options
 
 3D Secure 2.0 is a protocol that was developed in compliance with the PSD2 (Payment Service Directive 2.0) mandate to make online payments more secure through advanced cardholder verification.
 
 Only 3D Secure 2.0 is supported on Mobile Hosted Payment Page with the gateway as EVO and its the processor is EVO eService.
 
-## Payment Terminal Signature Page
+## Retrieve Response
 
 The Payment Terminals Signature page is used to retrieve the PNG version of the signature for the transaction created from Payment Terminals.
 
