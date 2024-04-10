@@ -6,17 +6,20 @@
 
 ## Payment Page Feature Comparison
 
-|Feature| RHPP (JS SDK) |RHPP (iFrame) | HPP (legacy)|
-|---| ------- |-------------| -----|
-|User Interface| Modern | Modern| Legacy|
-|Alternative Payment Methods| Apple Pay, Google Pay, PayPal/Venmo      | Google Pay | Not Supported |
-|Single Page UI Framework Support (React, Vue, etc.)| Seamless Integration | Requires Reloading Page| Requires Reloading Page|
-|Callback Support| Full Support| Mostly Supported
-|Mobile Support| Supported  | Supported      |   Not Supported |
-|BlueFin Support| Supported| Supported | Supported|
-|Customizability| Fully Customizable| Fully Customizable| Fully Customizable|
-|Save For Later Transaction| Not Supported  | Not Supported      |   Supported |
-|Payment Terminals| Not Supported | Not Supported      |   PAX S300, D210, and PX7  |
+|Feature| RHPP (JS SDK)| HPP|
+|-------| -------------| ---|
+|Mobile Responsive | Supporte d|Require Custom CSS/JS |
+|Alternative Payment Methods | Apple Pay, Google Pay, PayPal/Venmo | Not Supported |
+|Save For Later Transaction |Not Supported|Supported |
+|Payment Terminals| Not Supported  | PAX S300, D210, and PX7|
+|Single Page UI Framework Support (React, Vue, etc.) | Seamless Integration | Requires Reloading Page |
+|Callback Support | Full Support | ----- |
+|BlueFin Support | Supported| Supported |
+|Customizability | Custom CSS/JS |  Custom CSS/JS|
+
+
+**** NOTE: 
+**** Child RHPP iframe in RHPP SDK
 
 ## Hosted Payment Page
 
@@ -47,17 +50,6 @@ Please check the detailed instructions for [Alternative Payment Methods](https:/
 
 Only 3D Secure 2.0 is supported on Mobile Hosted Payment Page with the gateway as EVO and its the processor is EVO eService.
 
-## Payment Terminal Signature Page
 
-The Payment Terminals Signature page is used to retrieve the PNG version of the signature for the transaction created from Payment Terminals.
-
-Before embedding the signature page, please ensure the following:
-
-1. Generate a [Security Token](/Sections/Security%20Token.md).  Assume the token value is @TOKEN.
-2. Generate a new transaction with Payment Terminals, see our [Payment Terminals](../../../../PayFabric/Portal/blob/master/PayFabric/Sections/Payment%20Terminals.md) for how.  Assume the transaction key is @TRXKEY.
-
-Open the signature page with this URL:
-
-https://sandbox.payfabric.com/Payment/Web/Transaction/GetSignature?key={@TRXKEY}&token={@TOKEN}
 
 
