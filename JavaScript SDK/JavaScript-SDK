@@ -2,46 +2,61 @@
 PayFabric provides a JavaScript library to support both Alternative Payment Methods as well as interaction with our new responsive Hosted Payment Page.  This JavaScript Library hosted by PayFabric will be responsible for configuring and presenting a payment popup or element that supports our hosted payment page as well as any alternative payment methods PayFabric supports today or into the future.
 
 PayFabric released a new version of our JavaScript SDK during our Nov. release of PayFabric.  This new version supports a new responsive wallet page. Looking for previous versions of our JavaScript SDK? Click [V1](JavaScript-SDK-V1.md) and  [V2](JavaScript%20SDK-V2.md).
-# Alternative Payment Methods
-* [PayPal](APM.md#paypal)
-* [Apple Pay](APM.md#apple-pay)
-* [Google Pay](APM.md#Google-pay)
 
-# Maintain Wallets
-* [Create a Wallet](https://github.com/PayFabric/Hosted-Pages/blob/Master/Sections/MRHWP.md#create-a-credit-card--echeck)
-* [Edit a Wallet](https://github.com/PayFabric/Hosted-Pages/blob/master/Sections/MRHWP.md#edit-a-credit-card--echeck)
-
-# Where do I start?
+## Where do I start?
 
 1. Read up on our [guides and information](https://github.com/PayFabric/APIs/tree/master/PayFabric) for our APIs
 2. Read up on how to [Create a new Transaction](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Transactions.md#create-a-transaction) with our APIs.
-3. Read up on how to [Create a wallet](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Wallets.md) with our APIs.   
-4. Read up on how to [Create a JWT Token](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/JWTToken.md) with our APIs. 
-5. Have a question or need help? Contact <support@payfabric.com>.
+3. Read up on how to [Create a JWT Token](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/JWTToken.md) with our APIs. 
+4. Have a question or need help? Contact <support@payfabric.com>.
 
-# Ready to Go?
 
-Once you have followed our guides and information, you are ready to go.  Our JavaScript SDK is split into two (2) components:
-* Initiating a new Transaction and Payment Intent OR preparing a customer name for wallet creation, and preparing a wallet ID for wallet updating.
-* Using our Hosted JavaScript SDK library to start the payment/maintain wallet flow 
-
-## Initiating a new Transaction and Payment Intent
+## Payment Processing
 
 Using our [Create a new Transaction](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Transactions.md#create-a-transaction) and [Create a JWT Token](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/JWTToken.md#json-web-tokens) API's you will receive a JWT Token which is used to indicate your payment intent, this token value is all you need to use to populate our new JavaScript Library.
 
-## Initiating a new wallet creation
+Refer to below [Initiate JavaScript SDK Library ](#initiate-javascript-sdk-library) section on how to initiate.
+
+
+## Wallet Management
+
+### Create Wallet
 
 Prepare a customer name and [Create a JWT Token](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/JWTToken.md#json-web-tokens) API's you will receive a JWT Token which is used to indicate your wallet creation intent, this token value is all you need to use to populate our new JavaScript Library.
 
-## Initiating an existing wallet updating
+Refer to below [Initiate JavaScript SDK Library ](#initiate-javascript-sdk-library) section on how to initiate.
+
+### Edit Wallet
 
 Using our [Create a new wallet](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Wallets.md#credit-card--echeck-wallet) and [Create a JWT Token](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/JWTToken.md#json-web-tokens) API's you will receive a JWT Token which is used to indicate your wallet updating intent, this token value is all you need to use to populate our new JavaScript Library.
 
-Once you have obtained your JWT Token, you have all the data you need to initiate our payment flow and wallet maintenance using our JavaScript SDK library.
+Once you have obtained your JWT Token, you have all the data you need to initiate our wallet maintenance using our JavaScript SDK library.
 
-## Using our Hosted Bundled JavaScript SDK library to start the payment/wallet maintenance flow
+Refer to below [Initiate JavaScript SDK Library ](#initiate-javascript-sdk-library) section on how to initiate.
 
-Firstly, configure your checkout page to reference our JavaScript SDK and create an **Empty** DIV element with an ID.
+## Initiate JavaScript SDK Library
+
+If the platform that you are attempting to connect to PayFabric and our JavaScript SDK is experiencing some conflicts between the bundled PayFabric JS SDK and your platform, then we have provided a standalone version of the JS SDK. This standalone version only includes the PayFabric JavaScript and none of the required dependencies.
+
+<b>Bundled :</b>
+
+  * Live Endpoint: https://www.payfabric.com/Payment/WebGate/Content/bundles/payfabricpayments.V3.bundle.min.js
+
+  * Sandbox Endpoint: https://sandbox.payfabric.com/Payment/WebGate/Content/bundles/payfabricpayments.V3.bundle.min.js
+
+<b>Standalone:</b>
+
+   * Live Endpoint: https://www.payfabric.com/Payment/WebGate/Content/bundles/payfabricpayments.V3.standalone.min.js
+
+   * Sandbox Endpoint: https://sandbox.payfabric.com/Payment/WebGate/Content/bundles/payfabricpayments.V3.standalone.min.js
+
+<b>Dependencies:</b>
+
+  * [Axios](https://axios-http.com/) >= v0.21.1
+  * [iFrameResizer](https://github.com/davidjbradshaw/iframe-resizer) >= v4.3.1
+
+Configure your checkout page to reference our JavaScript SDK and create an Empty DIV element with an ID.
+
 ```HTML
 <html>
   <head>
@@ -54,23 +69,7 @@ Firstly, configure your checkout page to reference our JavaScript SDK and create
 </html>
 ```
 
-**Live Endpoint:** https://www.payfabric.com/Payment/WebGate/Content/bundles/payfabricpayments.V3.bundle.min.js
-
-**Sandbox Endpoint:** https://sandbox.payfabric.com/Payment/WebGate/Content/bundles/payfabricpayments.V3.bundle.min.js
-
-## Using our Hosted Standalone JavaScript SDK library to start the payment flow
-
-If the platform that you are attempting to connect to PayFabric and our JavaScript SDK is experiencing some conflicts between the bundled PayFabric JS SDK and your platform, then we have provided a standalone version of the JS SDK.  This standalone version only includes the PayFabric JavaScript and none of the required dependencies.  
-
-**Live Endpoint:** https://www.payfabric.com/Payment/WebGate/Content/bundles/payfabricpayments.V3.standalone.min.js
-
-**Sandbox Endpoint:** https://sandbox.payfabric.com/Payment/WebGate/Content/bundles/payfabricpayments.V3.standalone.min.js
-
-### Dependencies
-* [Axios](https://axios-http.com/) >= v0.21.1
-* [iFrameResizer](https://github.com/davidjbradshaw/iframe-resizer) >= v4.3.1
-
-Secondly, create a new function to load our payments SDK.  We will immediately display the payment box as soon as it is ready.  We recommend that you do this either on our script load, or through a button click.
+Create a new function to load our payments SDK.  We will immediately display the payment box as soon as it is ready.  We recommend that you do this either on our script load, or through a button click.
 ```javascript
 var jwtToken = '<JWT Token obtained from Generate a JWT Token API>';
 var payfabricpaymentssdk;
@@ -95,7 +94,7 @@ function payFabricSDKLoaded() {
 }
 ```
 
-# JavaScript SDK Options
+### SDK Options
 
 | Option | Required | Data Type | Description |
 | :-------------  | :------------- | :------------- | :------------- | 
@@ -124,7 +123,7 @@ function payFabricSDKLoaded() {
 | acceptedWalletTenderTypes | Optional | array of string | The list of available wallet tenders you wish to offer on the Responsive Hosted Create Wallet Page, available list of methods are:	`CreditCard` and `ECheck`. By default, it will use all the available tenders.|
 
 
-## iFrameSrcAdditionalParameters Object
+### iFrameSrcAdditionalParameters Object
 
 This object should be a standard object with a Key-Value pair of strings, for example:
 
@@ -139,6 +138,8 @@ The field names can be any custom name that you would like to use in the generat
 
 This can be used to pass custom data to our hosted page, which can then be consumed through the use of our [Hosted Payment Page Themes](https://github.com/PayFabric/Themes).
 
-# Mobile Hosted Payment Page with APM Example
+## Alternative Payment Methods
+* [PayPal](APM.md#paypal)
+* [Apple Pay](APM.md#apple-pay)
+* [Google Pay](APM.md#Google-pay)
 
-![image](https://user-images.githubusercontent.com/12906817/145439223-5e43f1fe-a071-46da-a068-e4a09a8bf4e3.png)

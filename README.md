@@ -1,9 +1,6 @@
 # PayFabric Hosted Pages
 
-PayFabric hosted pages are secure pages that can be embedded into your application, to allow for processing of the transactions or creating new credit card or eCheck entries into a customer’s wallet. Below are the base URL:
-
-1. Live Server:      ``https://www.payfabric.com/Payment/Web``
-2. Sandbox Server:   ``https://sandbox.payfabric.com/Payment/Web``
+PayFabric hosted pages are secure pages that can be embedded into your application, to allow for processing of the transactions or creating new credit card or eCheck entries into a customer’s wallet. 
 
 ## Where do I start?
 Want to get started with PayFabric Hosted Page integration? Here's a quick check list:
@@ -31,18 +28,14 @@ The gateway profile page is used for embedding a page to create or modify gatewa
 
 We have a [detailed guide](Workflows/Manage%20Gateway%20Profile.md) for getting started with embedding the gateway profile page into your application.
 
-## Payment Terminal Signature Page
 
-The Payment Terminals Signature page is used to retrieve the PNG version of the signature for the transaction created from Payment Terminals.
-
-We have a [detailed guide](Workflows/Payment%20Terminal%20Signature.md) for getting started with embedding the signature page into your application.
 
 ## Help us make it better
 Please tell us how we can make the Hosted Pages better. If you have a specific feature request or if you found a bug, please contact support@payfabric.com. Also, feel free to branch these documents and send a pull request with improvements!
 
 ## Versions
 
-For our other supported versions of the Hosted Page please see the below:
+For legacy versions of our Hosted Pages please see the below: 
 
 * [Version 2.0](https://github.com/PayFabric/Hosted-Pages/tree/v2)
 
