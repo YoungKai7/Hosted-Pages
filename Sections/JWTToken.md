@@ -20,7 +20,7 @@ Please note that <b>bold</b> fields are required fields in the APIs. For more in
 
 * `POST /payment/api/jwt/create` will create the jwt token
 * Set `Audience` to "PaymentPage.
-* Set `Subject` to a [PayFabric Transaction Key](Transactions.md#create-a-transaction)
+* Set `Subject` to a [PayFabric Transaction Key](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Transactions.md#create-a-transaction)
 
 
 <details open>
@@ -127,7 +127,7 @@ Please note that <b>bold</b> fields are required fields in the APIs. For more in
 
 * `POST /payment/api/jwt/create` will create the token
 * Set `Audience` to "EditWalletPage.
-* Set `Subject` to a [Wallet ID](Wallets.md#create-a-credit-card)
+* Set `Subject` to a [Wallet ID](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Wallets.md#create-a-credit-card)
 
 <details open>
 <summary> Request </summary>
@@ -162,7 +162,7 @@ Please note that <b>bold</b> fields are required fields in the APIs. For more in
 </pre>
 </details>
 
-Please note that <b>bold</b> fields are required fields, in this API, the two fields are all required. For more information and descriptions on available fields please see our [object reference](Objects.md#json-web-tokens).
+Please note that <b>bold</b> fields are required fields, in this API, the two fields are all required. For more information and descriptions on available fields please see our [object reference](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Objects.md#json-web-tokens).
 
 
 

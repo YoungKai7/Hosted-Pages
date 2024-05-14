@@ -28,7 +28,9 @@ The gateway profile page is used for embedding a page to create or modify gatewa
 
 We have a [detailed guide](Workflows/Manage%20Gateway%20Profile.md) for getting started with embedding the gateway profile page into your application.
 
+## Customize Page
 
+Both the payment and wallet pages are able to be customized with a custom theme consisting of custom CSS and JavaScript, which will be inserted into and applied to the hosted pages.  We have a [guide](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Themes.md) for creating and using these customized themes.
 
 ## Help us make it better
 Please tell us how we can make the Hosted Pages better. If you have a specific feature request or if you found a bug, please contact support@payfabric.com. Also, feel free to branch these documents and send a pull request with improvements!
