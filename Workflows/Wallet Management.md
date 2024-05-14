@@ -1,6 +1,6 @@
 # Wallet Management
 
-The PayFabric hosted wallet pages are used for embedding the wallet page into your application to allow your users to create or update their card / eCheck details (including billing address information).
+PayFabric Hosted Wallet pages are used for embedding the wallet page into your application to allow your users to create or update their card / eCheck details (including billing address information).
 
 Refer to our [Wallet APIs](//https://github.com/PayFabric/APIs/blob/master/PayFabric/README.md#wallets--credit-cards--echecks) for full list of supported scenarios.
 
@@ -62,7 +62,7 @@ There are two Hosted Wallet pages, create and edit. Before embedding the desired
 - Create a Credit Card / eCheck
   
   - Generate a [Security Token](/Sections/Security%20Token.md).  Assume the token value is @TOKEN. 
-  - Build the hosted create wallet page URL this way:
+  - Build the Hosted Create Wallet page URL this way:
 
     https://sandbox.payfabric.com/Payment/Web/Wallet/Create?customer={CUSTOMER_NUMBER}&tender={TENDER}&token={@TOKEN}  
 
@@ -73,7 +73,7 @@ There are two Hosted Wallet pages, create and edit. Before embedding the desired
 
   -  Generate a [Security Token](/Sections/Security%20Token.md).  Assume the token value is @TOKEN. 
   -  Retrieve the unique card Id, see our [API documentation](../../../../PayFabric-APIs/blob/master/PayFabric/Sections/Wallets.md#retrieve-credit-cards--echecks) for how.  Assume the card Id is @CARDID.
-  -  Build the hosted edit wallet page URL this way:
+  -  Build the Hosted Edit Wallet page URL this way:
   
      https://sandbox.payfabric.com/Payment/Web/Wallet/edit?card={@CARDID}&token={@TOKEN}
 
@@ -94,13 +94,8 @@ PayFabric Hosted Wallet page accepts the query string parameters below. Separate
 
 
 
+## Hosted Wallet Page 3D Secure Support
 
+To enable the 3D Secure validation on Hosted Create Wallet page, [Credit Card Validation](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/PayFabric%20Settings.md#transaction-options) setting must be enabled and the validation gateway must be EVO with eService processor.
 
-
-
-
-## 3D Secure Support
-
-To enable the 3D Secure validation on hosted create wallet page, [Credit Card Validation](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/PayFabric%20Settings.md#transaction-options) setting must be enabled and the validation gateway must be EVO with eService processor.
-
-<b>Note:</b> Hosted Create Wallet Page only supports 3D Secure 2.0, doesn't support 3D Secure 1.0.
+<b>Note:</b> Hosted Create Wallet page only supports 3D Secure 2.0, doesn't support 3D Secure 1.0.
