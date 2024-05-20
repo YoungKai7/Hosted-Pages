@@ -1,4 +1,4 @@
-## Manage Gateway Profile 
+## Manage Gateway Profile REMOVE SECTION
 
 Ability to embed PayFabric’s gateway profile page in an iFrame to allow internal admin user to manage gateway profile from application.
 

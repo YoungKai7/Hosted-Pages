@@ -16,7 +16,7 @@ PayFabric base URL:
 Please note that <b>bold</b> fields are required fields in the APIs. For more information and descriptions on available fields please see our [object reference](Objects.md#json-web-tokens).
 
 
-## Generate Token for a Payment Process
+## Generate Token for Payment Processing
 
 * `POST /payment/api/jwt/create` will create the jwt token
 * Set `Audience` to "PaymentPage.
