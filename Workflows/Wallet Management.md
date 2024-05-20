@@ -24,7 +24,7 @@ Depending on business and integration requirements, PayFabric Hosted Wallet Page
 Below are the steps on how to embed Responsive Hosted Wallet page using PayFabric JavaScript SDK library:
  
 1. [Generate](../Sections/JWTToken.md#generate-token-for-a-wallet-process) JSON Web Token (JWT) 
-2. [Initiate](../JavaScript%20SDK/JavaScript-SDK.md) PayFabric JavaScript SDK library using the generated JWT.
+2. [Load](../JavaScript%20SDK/JavaScript-SDK.md) PayFabric JavaScript SDK library using the generated JWT.
 
 Alternatively, Responsive Hosted Wallet page can be embedded through direct iFrame call. Refer to below:
 
