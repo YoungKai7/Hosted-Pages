@@ -2,7 +2,10 @@ Security Token
 ============================
 
 Clients are able to use _Device ID_ and _Device Password_ ([How to Create Device ID and Device Password](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Configure%20Portal.md#devices)) to generate _Security Tokens_.
-Security tokens are one-time use authorization credentials. You should only use this authentication method in secure environments. 
+Security tokens are one-time use authorization credentials. You should only use this authentication method in secure environments.
+
+Security tokens are used to generate the PayFabric [Hosted Payment Page](./Hosted%20Payment%20Page%20(HPP).md) and [Hosted Wallet Page](./Hosted%20Wallet%20Page.md).
+- **Note**: The [Responsive Hosted Payment Page](Responsive%20Hosted%20Payment%20Page%20(JavaScript%20SDK).md) and [Responsive Hosted Wallet Page](Hosted%20Wallet%20Page.md) utilize [JWT Tokens](./JWTToken.md) instead.
 
 Generate Security Token C# Sample Code Snippet, for more sample codes, click [here](https://github.com/PayFabric/APIs/tree/master/PayFabric/Samples).
 --------------

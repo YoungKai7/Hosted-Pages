@@ -1,37 +1,37 @@
-## Manage Gateway Profile REMOVE SECTION
+# Manage Gateway Profile
 
-Ability to embed PayFabric’s gateway profile page in an iFrame to allow internal admin user to manage gateway profile from application.
+You can embed PayFabric’s Gateway Profile Page within an iFrame to allow internal admin users to manage gateway profiles directly from your application.
 
-Before embedding the gateway profile page, please ensure the following:
+## Prerequisites
 
-1. Generate a [Security Token](/Sections/Security%20Token.md).  Assume the token value is @TOKEN.
-2. If updating, retrieve the unique gateway ID, see our [API documentation](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Payment%20Gateway%20Profiles.md#retrieve-a-payment-gateway-profile) for how.  Assume the gateway ID is @GATEWAYID.
+Before embedding the gateway profile page, ensure the following:
 
-Create a Gateway Profile
------------------------------
+1. **Generate a Security Token**: Follow the instructions [here](/Sections/Security%20Token.md) to generate a security token. Assume the token value is `@TOKEN`.
+2. **Retrieve the Unique Gateway ID** (if updating existing gateway): Refer to our [API documentation](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Payment%20Gateway%20Profiles.md#retrieve-a-payment-gateway-profile) to learn how to retrieve the unique gateway ID. Assume the gateway ID is `@GATEWAYID`.
 
-Build the hosted create gateway profile page URL this way:
+## Create a Gateway Profile
 
-https://sandbox.payfabric.com/payment/web/transaction/hostnewgateway?token=@TOKEN  
+To create a new gateway profile, construct the hosted create gateway profile page URL as follows:
+
+https://sandbox.payfabric.com/payment/web/transaction/hostnewgateway?token=@TOKEN
+
 
 ![Hosted create gateway profile page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedCreateGatewayPage.png)
 
-Update a Gateway Profile
------------------------------
+## Update a Gateway Profile
 
-Build the hosted update gateway profile page URL this way:
+To update an existing gateway profile, construct the hosted update gateway profile page URL as follows:
 
 https://sandbox.payfabric.com/payment/web/transaction/hosteditgateway?id={@GATEWAYID}&token={@TOKEN}
 
+
 ![Hosted update gateway profile page](https://raw.githubusercontent.com/PayFabric/Portal/master/PayFabric/Sections/Screenshots/HostedUpdateGatewayPage.png) 
 
-Options
--------
+## Options
 
-PayFabric hosted gateway profile page accepts the below query string parameters to add options. You can use below query parameters by adding them to your hosted gateway profile page URL and connecting them with '&'.
+The PayFabric hosted gateway profile page accepts the following query string parameters to add options. You can include these parameters by adding them to your hosted gateway profile page URL and connecting them with `&`.
 
->
-| QueryString| Description | 
-|:------------- | :------------- | 
-|ThemeName=|This parameter is to support 3rd party dynamically pass into theme name via query string. If the value is an existing theme name, then page will use this theme; If the value is an nonexistent theme name, then page will use the device default theme.|
-|ReturnURI=|This parameter is to support 3rd party dynamically pass a return url via query string. If the value is a valid URL, then after the gateway profile is saved, page will redirect to the return url, and the unique gateway ID will be appended to the return URL. (<b>Note:</b> the parameter is only for hosted create gateway profile page.)|
+| Query String | Description |
+|:-------------|:-------------|
+| `ThemeName=` | Pass a theme name dynamically via the query string. If the value is an existing theme name, the page will use that theme; if not, it will use the default theme. See [Themes](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Themes.md) for details on using and customizing themes. |
+| `ReturnURI=` | Pass a return URL dynamically via the query string. If the value is a valid URL, after the gateway profile is saved, the page will redirect to the return URL with the unique gateway ID appended. (Note: This parameter is only for the hosted create gateway profile page.) |

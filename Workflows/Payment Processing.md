@@ -1,22 +1,16 @@
 # Payment Processing
-
-## Overview
 PayFabric Hosted Payment Pages offers a robust and secure solution for processing payments online. PayFabric Hosted Payment Pages can be embedded into your application to allow for processing of transactions with credit cards and/or eCheck.
 
-## Table of Contents
-
-- [Payment Page Feature Comparison](#payment-page-feature-comparison)
-- [Payment Processing Walkthrough](#payment-processing-walkthrough)
-- [Alternative Payment Methods](#alternative-payment-methods)
-- [3D Secure Support](#3d-secure-support)
-- [Payment Terminal Signature Page](#payment-terminal-signature-page)
+PayFabric offers two different payment pages for processing payments: Responsive Hosted Payment Page (RHPP) and Hosted Payment Page (HPP). For details on the differences, see the Feature Comparison below.
 
 ## Payment Page Feature Comparison
 
 |Feature| Responsive Hosted Payment Page (RHPP)| Hosted Payment Page (HPP)|
 |-------| -------------| ---|
 |Mobile Responsive | Supported|Require Custom CSS/JS |
+|Supported Integration Method | PayFabric JS SDK, iFrame| iFrame only|
 |Alternative Payment Methods | Apple Pay, Google Pay, PayPal/Venmo | Not Supported |
+|3D Secure (3DS)| Supported| Not Supported|
 |Save For Later Transaction |Not Supported|Supported |
 |Payment Terminals| Not Supported  | PAX S300, D210, and PX7|
 |Single Page UI Framework Support (React, Vue, etc.) | Seamless Integration | Requires Reloading Page |
@@ -26,13 +20,20 @@ PayFabric Hosted Payment Pages offers a robust and secure solution for processin
 
 ## Payment Processing Walkthrough
 
-This section will walk you through the essential steps to utilize Payfabric Hosted Payment Pages for secure payment processing inside your application. Before proceeding, review and use the appropriate base URL for when calling PayFabric APIs:
+### Prerequisites
 
- Live Server:      ``https://www.payfabric.com/Payment/Web``
+Before you start, ensure you have the following items ready:
+   - [ ] Select the appropriate server API endpoint:
+      - Live Server: `https://www.payfabric.com/Payment/Web`
+      - Sandbox Server: `https://sandbox.payfabric.com/Payment/Web`
 
- Sandbox Server:   ``https://sandbox.payfabric.com/Payment/Web``
+  - [ ] Review the [PayFabric Themes](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Themes.md) page to understand customization options.
+  - [ ] Set up the appropriate branding and styling for the hosted payment page.
+  - [ ] Decide whether to use the RHPP or the HPP:
+      - **[Responsive Hosted Payment Page (RHPP)](../Sections/Responsive%20Hosted%20Payment%20Page%20(JavaScript%20SDK).md)**: For most use cases, use the Mobile Responsive Hosted Payment Page.
+      - **[Hosted Payment Page (HPP)](../Sections/Hosted%20Payment%20Page.md)**: For use cases where payment terminals are required, or when the transaction on the payment page should be saved to be processed at a later time, utilize this hosted payment page.
 
-### Steps: 
+### Steps for Processing a Payment: 
 
 1. **Generate a Security Token**
 
@@ -47,8 +48,9 @@ This section will walk you through the essential steps to utilize Payfabric Host
 3. **Load Payment Page**
 
    Once a transaction key is generated, you may now proceed to loading the hosted page. Depending on your requirements, you can choose between two options for the payment page:
-   - **[Responsive Hosted Payment Page (RHPP)](../Sections/Responsive%20Hosted%20Payment%20Page%20(JavaScript%20SDK).md)**: For most use cases, use the Mobile Responsive Hosted Payment Page. This page can be embedded through both the [PayFabric JavaScript SDK](../Sections/Responsive%20Hosted%20Payment%20Page%20(JavaScript%20SDK).md) as well as [through an iFrame](../Sections/Responsive%20Hosted%20Payment%20Page%20(iFrame).md).
-   - **[Hosted Payment Page (HPP)](../Sections/Hosted%20Payment%20Page.md)**: For use cases where payment terminals are required, or when the transaction on the payment page should be saved to be processed at a later time, utilize this hosted payment page.
+   - Option 1: **[Responsive Hosted Payment Page (RHPP)](../Sections/Responsive%20Hosted%20Payment%20Page%20(JavaScript%20SDK).md)**:  This page can be embedded through both the PayFabric JavaScript SDK as well as through an iFrame.
+
+   - Option 2: **[Hosted Payment Page (HPP)](../Sections/Hosted%20Payment%20Page.md)**: This page is only available through iFrame.
 
 4. **Retrieve Response**
 

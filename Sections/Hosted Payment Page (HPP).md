@@ -80,7 +80,7 @@ Then the hosted payment page will show EMV entry.
 1. The Gift Card button will show on the EMV entry only when you [Allow Gift Card](https://github.com/PayFabric/Portal/blob/master/PayFabric/Sections/Payment%20Terminals.md#allow-gift-card).
 2. When you select 'Both EMV and Web Entry', you can switch the processing method at the bottom of the hosted page.
 
-The Payment Terminals Signature page is used to retrieve the PNG version of the signature for the transaction created from Payment Terminals.
+The **Payment Terminals Signature page** is used to retrieve the PNG version of the signature for the transaction created from Payment Terminals.
 
 Before embedding the signature page, please ensure the following:
 
