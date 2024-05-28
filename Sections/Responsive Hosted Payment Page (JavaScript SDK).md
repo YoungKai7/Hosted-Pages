@@ -4,8 +4,6 @@ PayFabric provides a JavaScript library to support both processing and saving cr
 
 Alternatively, an iFrame can be used to embed the Responsive Hosted Payment Page. See [RHPP (iFrame)](../Sections/Responsive%20Hosted%20Payment%20Page%20(iFrame).md) for details.
 
-PayFabric released a new version of our JavaScript SDK during our Nov. 2023 release of PayFabric. Looking for previous versions of our JavaScript SDK? See [V1](../JavaScript%20SDK/JavaScript-SDK-V1.md) and [V2](../JavaScript%20SDK/JavaScript-SDK-V2.md).
-
 ## Walkthrough
 
 This section will walk you through how to embed the Responsive Hosted Payment Page into your application for secure payment processing. 

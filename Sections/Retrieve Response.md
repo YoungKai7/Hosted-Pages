@@ -41,11 +41,11 @@ Front-end code is susceptible to user tinkering. While this method provides imme
 
 After a Hosted Page completes processing, a window event is triggered with a response message composed in JSON string format, with "Event" set to one of the following.
 
-#### Events Available with Hosted Payment Page
+#### Events Available with Hosted Payment Page (HPP)
 - OnTransactionCompleted
 - OnSaveTransactionCompleted
 
-#### Events Available with Mobile Hosted Payment Page
+#### Events Available with Responsive Hosted Payment Page (RHPP)
 - readyCallback
 - transaction3DSChallengeCallback
 - successCallback
@@ -58,7 +58,7 @@ After a Hosted Page completes processing, a window event is triggered with a res
 - OnWalletCreateCompleted
 - OnWalletUpdateCompleted
 
-#### Events Available with Mobile Hosted Wallet Pages
+#### Events Available with Responsive Hosted Wallet Pages
 - successCallback
 - failureCallback
 - cancelCallback
@@ -68,7 +68,7 @@ After a Hosted Page completes processing, a window event is triggered with a res
 
 Add an Event Listener on your page to get the response message.
 
-Example JavaScript code:
+**Example JavaScript code:**
 ```javascript
 window.addEventListener('message', function(event) {
   var objMsg;
@@ -93,25 +93,30 @@ window.addEventListener('message', function(event) {
 }, false);
 ```
 
-Example response string (HPP):
-```json
-{
-  "Event": "OnTransactionCompleted",
-  "TrxKey": "19111500384554",
-  "RespStatus": "Approved",
-  "ResultCode": "1",
-  "AuthCode": "1AR1IJ",
-  "ResponseMsg": "APPROVED",
-  "OriginationID": "6552A51518F54AC38B84164EE69965BA",
-  "RespTrxTag": "11/21/2019 9:55:01 PM",
-  "CVV2Response": "NotProcessed",
-  "AVSAddressResponse": "Match",
-  "AVSZipResponse": "Match",
-  "IAVSAddressResponse": ""
-}
-```
+<details>
+  <summary>Example response string (HPP):</summary>
 
-Example response string (MRHPP):
+  ```json
+  {
+    "Event": "OnTransactionCompleted",
+    "TrxKey": "19111500384554",
+    "RespStatus": "Approved",
+    "ResultCode": "1",
+    "AuthCode": "1AR1IJ",
+    "ResponseMsg": "APPROVED",
+    "OriginationID": "6552A51518F54AC38B84164EE69965BA",
+    "RespTrxTag": "11/21/2019 9:55:01 PM",
+    "CVV2Response": "NotProcessed",
+    "AVSAddressResponse": "Match",
+    "AVSZipResponse": "Match",
+    "IAVSAddressResponse": ""
+  }
+```
+</details>
+
+<details>
+<summary>Example response string (RHPP):</summary>
+
 ```json
 {
   "Event": "successCallback",
@@ -149,6 +154,9 @@ Example response string (MRHPP):
   "RemainingBalance": null
 }
 ```
+
+</details>
+
 
 ## Windows Form Application
 
