@@ -16,19 +16,19 @@ Ready to integrate PayFabric Hosted Pages? Follow this quick checklist:
 
 ### Payment Processing
 
-To embed a payment page in your application and process transactions, follow the steps in our [Payment Processing](Workflows/Payment%20Processing.md) guide.
+Payment pages for process payments. [<kbd>🔗 LINK</kbd>](Workflows/Payment%20Processing.md)
 
 ### Wallet Management
 
-To embed a wallet page for creating or modifying credit card or eCheck entries, refer to our [Wallet Management](Workflows/Wallet%20Management.md) guide.
+Wallet pages for creating or modifying Wallet (credit card or eCheck) entries. [<kbd>🔗 LINK</kbd>](Workflows/Wallet%20Management.md)
 
-### Manage PayFabric Gateways Profiles
+### Manage Gateways Profiles
 
-To allow users to create and modify gateway profiles in PayFabric directly from your application, embed the hosted Gateway Profile Page in an iFrame following the instructions on the [Manage Gateway Profile](Workflows/Manage%20Gateway%20Profile.md) guide.
+Create and modify PayFabric Gateway Profiles. [<kbd>🔗 LINK</kbd>](Workflows/Manage%20Gateway%20Profile.md)
 
 ### Payment Terminal Signatures
 
-TBD
+Retrieve the PNG version of the signature from payment terminals. [<kbd>🔗 LINK</kbd>](Workflows/Payment%20Terminal%20Signatures.md)
 
 ## Customization
 
