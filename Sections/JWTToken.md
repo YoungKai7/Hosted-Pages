@@ -2,18 +2,14 @@
 # JSON Web Tokens
 
 
-The PayFabric JSON Web Tokens API is used to authentication for the new responsive hosted payment and wallet pages. Please note that all requests require API authentication, see our [guide](Authentication.md) on how to authenticate.
+The PayFabric JSON Web Tokens API is used to authentication for the Responsive Hosted Payment Page and Responsive Hosted Wallet Page. Each JWT will indicate your intent of the operation through declaration of `Audience` and `Subject`.
 
-These JWT's are intended to be used to indicate your `Intent`.
+API Base URLs:
 
+1. Live Server:      `https://www.payfabric.com/Payment/Web`
+2. Sandbox Server:   `https://sandbox.payfabric.com/Payment/Web`
 
-PayFabric base URL: 
-
-1. Live Server:      ``https://www.payfabric.com/Payment/Web``
-2. Sandbox Server:   ``https://sandbox.payfabric.com/Payment/Web``
-
-
-Please note that <b>bold</b> fields are required fields in the APIs. For more information and descriptions on available fields please see our [object reference](Objects.md#json-web-tokens).
+Please note that all requests require API authentication ([<kbd>🔗 LINK</kbd>](Authentication.md)).
 
 
 ## Generate Token for Payment Processing
@@ -27,14 +23,15 @@ Please note that <b>bold</b> fields are required fields in the APIs. For more in
 <summary> Request </summary>
 <pre>
 {
-	<b>"Audience"</b>:"PaymentPage",
-	<b>"Subject"</b>:"21040500682801"
+    <b>"Audience"</b>:"PaymentPage",
+    <b>"Subject"</b>:"21040500682801"
 }
 </pre>
+<blockquote>Required fields are marked in <b>Bold</b>. See <a href="Objects.md#json-web-tokens">object reference</a> for details.</blockquote>
 </details>
 
 <details>
-<summary> Response <summary>
+<summary> Response </summary>
 <pre>
 {
     "Message": "",
@@ -65,7 +62,7 @@ Please note that <b>bold</b> fields are required fields in the APIs. For more in
                         "value": "Nodus_SP_PPCP"
                     }
                 ],
-                "src": "https:\/\/www.paypal.com\/sdk\/js?client-id=AfGQA1jQrGwqYSqbrN6M0ZnXwvDZNVKaXlNvI8VYbmb14vFWrF5CQtgw-O6xvz6n7sLtmvWJ0s0A5uW3&merchant-id=Q3E49R5X48QLG&enable-funding=venmo&disable-funding=paylater,card&currency=USD&integration-date=2021-03-16",
+                "src": "https://www.paypal.com/sdk/js?client-id=AfGQA1jQrGwqYSqbrN6M0ZnXwvDZNVKaXlNvI8VYbmb14vFWrF5CQtgw-O6xvz6n7sLtmvWJ0s0A5uW3&merchant-id=Q3E49R5X48QLG&enable-funding=venmo&disable-funding=paylater,card&currency=USD&integration-date=2021-03-16",
                 "type": "PAYPAL"
             }
         ]
@@ -93,6 +90,7 @@ Please note that <b>bold</b> fields are required fields in the APIs. For more in
     <b>"Subject"</b>:"CUST0001"
 }
 </pre>       
+<blockquote>Required fields are marked in <b>Bold</b>. See <a href="Objects.md#json-web-tokens">object reference</a> for details.</blockquote>
 </details>
 
 
@@ -133,9 +131,11 @@ Please note that <b>bold</b> fields are required fields in the APIs. For more in
 <summary> Request </summary>
 <pre>
 {
-   <b>"Audience"</b>:"EditWalletPage",
-   <b>"Subject"</b>:"81d824cb-4032-4532-bd18-0a2ef5ddcafc"
+    <b>"Audience"</b>:"EditWalletPage",
+    <b>"Subject"</b>:"81d824cb-4032-4532-bd18-0a2ef5ddcafc"
 }
+</pre>
+<blockquote>Required fields are marked in <b>Bold</b>. See <a href="Objects.md#json-web-tokens">object reference</a> for details.</blockquote>
 </details>
 
 <details>
@@ -162,10 +162,6 @@ Please note that <b>bold</b> fields are required fields in the APIs. For more in
 </pre>
 </details>
 
-Please note that <b>bold</b> fields are required fields, in this API, the two fields are all required. For more information and descriptions on available fields please see our [object reference](https://github.com/PayFabric/APIs/blob/master/PayFabric/Sections/Objects.md#json-web-tokens).
-
-
-
 
 ## Validate JSON Web Tokens
 
@@ -176,15 +172,14 @@ Please note that <b>bold</b> fields are required fields, in this API, the two fi
 <summary> Request </summary>
 <pre>
 {
-	"Token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXlGYWJyaWNfVjMiLCJpYXQiOiIxNjE3Njg3MjU3IiwiZXhwIjoiMTYxNzY4ODE1NyIsImF1ZCI6IlBheW1lbnRQYWdlIiwic3ViIjoiSFBQMjEwNDA1MDA2ODI4MDEiLCJpbnN0IjoiZjI0MmJkNmQtN2EyMy00MWQ3LWExMmUtNDY0MjdjZTRlYmE0IiwiZGV2aWNlIjoiNzI5NzJhMmItOGE3MS00ZTI5LWFlYWItMWM0MThiMTM2ODY5IiwiZGNuIjoiMSIsInN1cHBvcnRlZFBheW1lbnRNZXRob2RzIjpbeyJ0eXBlIjoiQ3JlZGl0Q2FyZCIsInNyYyI6IlVSTCIsImF0dHJpYnV0ZXMiOm51bGx9LHsidHlwZSI6IkVDaGVjayIsInNyYyI6IlVSTCIsImF0dHJpYnV0ZXMiOm51bGx9LHsidHlwZSI6IlBBWVBBTCIsInNyYyI6Imh0dHBzOi8vd3d3LnBheXBhbC5jb20vc2RrL2pzP2NsaWVudC1pZD1BZkdRQTFqUXJHd3FZU3Fick42TTBablh3dkRaTlZLYVhsTnZJOFZZYm1iMTR2RldyRjVDUXRndy1PNnh2ejZuN3NMdG12V0owczBBNXVXMyZtZXJjaGFudC1pZD1RM0U0OVI1WDQ4UUxHJmVuYWJsZS1mdW5kaW5nPXZlbm1vJmRpc2FibGUtZnVuZGluZz1wYXlsYXRlcixjYXJkJmN1cnJlbmN5PVVTRCZpbnRlZ3JhdGlvbi1kYXRlPTIwMjEtMDMtMTYiLCJhdHRyaWJ1dGVzIjpbeyJrZXkiOiJkYXRhLXBhcnRuZXItYXR0cmlidXRpb24taWQiLCJ2YWx1ZSI6Ik5vZHVzX1NQX1BQQ1AifV19XX0.grPRlquWaPWiySm6oaOLXTbQnLzM3Dz2JUtYF0pcno4"
+    <b>"Token"</b>:"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXlGYWJyaWNfVjMiLCJpYXQiOiIxNjE3Njg3MjU3IiwiZXhwIjoiMTYxNzY4ODE1NyIsImF1ZCI6IlBheW1lbnRQYWdlIiwic3ViIjoiSFBQMjEwNDA1MDA2ODI4MDEiLCJpbnN0IjoiZjI0MmJkNmQtN2EyMy00MWQ3LWExMmUtNDY0MjdjZTRlYmE0IiwiZGV2aWNlIjoiNzI5NzJhMmItOGE3MS00ZTI5LWFlYWItMWM0MThiMTM2ODY5IiwiZGNuIjoiMSIsInN1cHBvcnRlZFBheW1lbnRNZXRob2RzIjpbeyJ0eXBlIjoiQ3JlZGl0Q2FyZCIsInNyYyI6IlVSTCIsImF0dHJpYnV0ZXMiOm51bGx9LHsidHlwZSI6IkVDaGVjayIsInNyYyI6IlVSTCIsImF0dHJpYnV0ZXMiOm51bGx9LHsidHlwZSI6IlBBWVBBTCIsInNyYyI6Imh0dHBzOi8vd3d3LnBheXBhbC5jb20vc2RrL2pzP2NsaWVudC1pZD1BZkdRQTFqUXJHd3FZU3Fick42TTBablh3dkRaTlZLYVhsTnZJOFZZYm1iMTR2RldyRjVDUXRndy1PNnh2ejZuN3NMdG12V0owczBBNXVXMyZtZXJjaGFudC1pZD1RM0U0OVI1WDQ4UUxHJmVuYWJsZS1mdW5kaW5nPXZlbm1vJmRpc2FibGUtZnVuZGluZz1wYXlsYXRlcixjYXJkJmN1cnJlbmN5PVVTRCZpbnRlZ3JhdGlvbi1kYXRlPTIwMjEtMDMtMTYiLCJhdHRyaWJ1dGVzIjpbeyJrZXkiOiJkYXRhLXBhcnRuZXItYXR0cmlidXRpb24taWQiLCJ2YWx1ZSI6Ik5vZHVzX1NQX1BQQ1AifV19XX0.grPRlquWaPWiySm6oaOLXTbQnLzM3Dz2JUtYF0pcno4"
 }
 </pre>
- 
 </details>
 
 
 <details>
-<summary> Response for valid JWT </summary>
+<summary> Response - Valid JWT </summary>
 <pre>
 {
     "Message": null,
@@ -215,7 +210,7 @@ Please note that <b>bold</b> fields are required fields, in this API, the two fi
                         "value": "Nodus_SP_PPCP"
                     }
                 ],
-                "src": "https:\/\/www.paypal.com\/sdk\/js?client-id=AfGQA1jQrGwqYSqbrN6M0ZnXwvDZNVKaXlNvI8VYbmb14vFWrF5CQtgw-O6xvz6n7sLtmvWJ0s0A5uW3&merchant-id=Q3E49R5X48QLG&enable-funding=venmo&disable-funding=paylater,card&currency=USD&integration-date=2021-03-16",
+                "src": "https://www.paypal.com/sdk/js?client-id=AfGQA1jQrGwqYSqbrN6M0ZnXwvDZNVKaXlNvI8VYbmb14vFWrF5CQtgw-O6xvz6n7sLtmvWJ0s0A5uW3&merchant-id=Q3E49R5X48QLG&enable-funding=venmo&disable-funding=paylater,card&currency=USD&integration-date=2021-03-16",
                 "type": "PAYPAL"
             }
         ]
@@ -225,7 +220,6 @@ Please note that <b>bold</b> fields are required fields, in this API, the two fi
 }
 </pre>
 </details>
-
 
 <details>
 <summary> Response for expired JWT </summary>
@@ -238,4 +232,3 @@ Please note that <b>bold</b> fields are required fields, in this API, the two fi
 }
 </pre>
 </details>
-
