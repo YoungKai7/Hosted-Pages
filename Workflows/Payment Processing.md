@@ -5,18 +5,19 @@ PayFabric offers two different payment pages for processing payments: Responsive
 
 ## Payment Page Feature Comparison
 
-|Feature| Responsive Hosted Payment Page (RHPP)| Hosted Payment Page (HPP)|
-|-------| -------------| ---|
-|Mobile Responsive | Supported|Require Custom CSS/JS |
-|Supported Integration Method | PayFabric JS SDK, iFrame| iFrame only|
-|Alternative Payment Methods | Apple Pay, Google Pay, PayPal/Venmo | Not Supported |
-|3D Secure (3DS)| Supported| Not Supported|
-|Save For Later Transaction |Not Supported|Supported |
-|Payment Terminals| Not Supported  | PAX S300, D210, and PX7|
-|Single Page UI Framework Support (React, Vue, etc.) | Seamless Integration | Requires Reloading Page |
-|Callback Support | Full Support | ----- |
-|BlueFin Support | Supported| Supported |
-|Customizability | Custom CSS/JS |  Custom CSS/JS|
+| Feature | Responsive Hosted Payment Page (RHPP) | Hosted Payment Page (HPP) |
+| ------- | ------------------------------------- | ------------------------- |
+| Mobile Responsive | $${\color{green}✔}$$ | Require Custom CSS/JS |
+| Supported Integration Methods | PayFabric JS SDK, iFrame | iFrame only |
+| Alternative Payment Methods | Apple Pay, Google Pay, PayPal/Venmo | $${\color{red}✘}$$ |
+| 3D Secure (3DS) | $${\color{green}✔}$$* | $${\color{red}✘}$$ |
+| Save For Later Transaction | $${\color{red}✘}$$ | $${\color{green}✔}$$ |
+| Payment Terminals | $${\color{red}✘}$$  | PAX S300, D210, and PX7 |
+| Single Page UI Framework Support (React, Vue, etc.) | Seamless Integration | Requires Reloading Page |
+| BlueFin Support | $${\color{green}✔}$$| $${\color{green}✔}$$ |
+| Customizability | Custom CSS/JS |  Custom CSS/JS |
+
+_*Available with EVO eService, GPAPI connections._
 
 ## Payment Processing Walkthrough
 
