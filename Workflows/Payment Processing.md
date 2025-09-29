@@ -10,14 +10,14 @@ PayFabric offers two different payment pages for processing payments: Responsive
 | Mobile Responsive | $${\color{green}✔}$$ | Require Custom CSS/JS |
 | Supported Integration Methods | PayFabric JS SDK, iFrame | iFrame only |
 | Alternative Payment Methods | Apple Pay, Google Pay, PayPal/Venmo | $${\color{red}✘}$$ |
-| 3D Secure (3DS) | $${\color{green}✔}$$* | $${\color{red}✘}$$ |
+| 3D Secure (3DS) | $${\color{green}✔}$$<sup>*</sup> | $${\color{red}✘}$$ |
 | Save For Later Transaction | $${\color{red}✘}$$ | $${\color{green}✔}$$ |
 | Payment Terminals | $${\color{red}✘}$$  | PAX S300, D210, and PX7 |
 | Single Page UI Framework Support (React, Vue, etc.) | Seamless Integration | Requires Reloading Page |
 | BlueFin Support | $${\color{green}✔}$$| $${\color{green}✔}$$ |
 | Customizability | Custom CSS/JS |  Custom CSS/JS |
 
-_*Available with EVO eService, GPAPI connections._
+_<sup>*</sup>Available with EVO eService, GP API connections._
 
 ## Payment Processing Walkthrough
 
